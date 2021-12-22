@@ -1,0 +1,22 @@
+.contacttext{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 40px;
+    padding-right: 13rem;
+    border: none;
+    border-bottom: solid #2F2F2F 2px;
+    color: #2F2F2F;
+}
+.contactform{
+    margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .contacttext{
+        width: 100%;
+        margin-bottom: 3rem;
+        padding: 0;
+    }
+}

@@ -1,0 +1,129 @@
+.aboutdiv2{
+    margin-top: 11rem;
+}
+.aboutdiv h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+line-height: 50px;
+}
+.aboutdiv h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #2D2D2D;
+    font-size: 28px;
+    line-height: 36px;
+}
+.aboutdiv p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: #2F2F2F;
+}
+.aboutdiv h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+font-size: 27px;
+color: #313131;
+line-height: 33px;
+}
+.aboutdiv .last{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+font-size: 27px;
+color: #313131;
+line-height: 33px;
+}
+.aboutdiv h2{
+    font-family: 'Poppins', sans-serif;
+
+    font-weight: 600;
+font-size: 32px;
+line-height: 40px;
+}
+.joinus{
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+.imgpair{
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+}
+.aboutimg{
+    padding: 0;
+    margin-top: 8rem;
+}
+.imgpair1{
+    margin-bottom: 7rem;
+    width: 80%;
+}
+.imgpair2{
+    margin-top: 7rem;
+    width: 80%;
+}
+
+.greydiv{
+    background-color: #F2F2F2;
+    padding: 5rem 0;
+    text-align: center;
+}
+.last{
+    margin: 5rem 0;
+}
+.greydiv p{
+    font-size: 1.2rem;
+}
+.aboutdiv3{
+    margin-top: 0;
+}
+.sound-interesting-with-space{
+    margin-bottom: 5rem;
+}
+@media screen and (max-width: 768px) {
+    .aboutdiv2 {
+        margin-top: 100px;
+    }
+    .aboutimg{
+        padding: 0;
+        margin-top: 2rem;
+    }
+    .imgpair{
+        margin-top: 1.4rem;
+        margin-bottom: 0;
+    }
+    .last{
+        margin: 2rem 0;
+    }
+    .aboutdiv h4{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+    font-size: 20px;
+    color: #313131;
+    line-height: 33px;
+    }
+    .aboutdiv p{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: #2F2F2F;
+    }
+    .imgpair1{
+        margin-bottom: 0;
+    }
+    .imgpair2{
+        display: none;
+    }
+    .about-mobile-img-hide {
+        display: none;
+    }
+    .about-mobile-img{
+        justify-content: center;
+    }
+    .greydiv p{
+        font-size: 1rem;
+    }
+    .aboutdiv3{
+        margin-top: 30px;
+    }
+}

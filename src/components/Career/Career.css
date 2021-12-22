@@ -1,0 +1,103 @@
+.career h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+line-height: 100px;
+}
+
+.aboutdiv h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+}
+.formname{
+    width: 48%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 40px;
+    color: #2F2F2F;
+    border: none;
+    border-bottom: solid #2F2F2F 2px;
+}
+.formemail{
+    width: 48%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 40px;
+    padding-right: 13rem;
+    border: none;
+    border-bottom: solid #2F2F2F 2px;
+    color: #2F2F2F;
+}
+.careertext{
+    width: 100%;
+    margin-top: 5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 40px;
+    padding-right: 13rem;
+    border: none;
+    border-bottom: solid #2F2F2F 2px;
+    color: #2F2F2F;
+}
+.careerbtn{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0.8em;
+}
+.formname{
+    /* width: 80%; */
+    margin-bottom: 3rem;
+    padding: 0;
+}
+.careertext{
+    width: 100%;
+    padding: 0;
+}
+input:focus, textarea {
+    outline: none !important;
+}
+.progress-bar{
+    border-radius: 2em;
+    margin-top: 3rem;
+}
+.progress-inner-bar{
+    border-radius: 2em;
+}
+.career-img{
+    width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    .formname{
+        width: 100%;
+        margin-bottom: 3rem;
+        padding: 0;
+    }
+    input{
+        width: 100%;
+    }
+    .formemail{
+        width: 100%;
+    }
+    .career h1{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+    line-height: 70px;
+    }
+    .careerbtn{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        padding: 0.6em;
+    }
+    .career-img{
+        width: 100%;
+    }
+}

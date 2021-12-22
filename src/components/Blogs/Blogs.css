@@ -1,0 +1,295 @@
+.carousel-img {
+    border-radius: 1.4em;
+    height: 26.1rem; /* width of container */
+    width: 100%;
+    object-fit: cover;
+}
+.carousel-div{
+    padding-top: 150px;
+}
+.carousel-div-link{
+    color: black;
+}
+.carousel-div-link:hover{
+    color: rgb(90, 90, 90);
+}
+.carousel-title h3{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.04em;
+}
+.carousel-content{
+    /* position: absolute; */
+    z-index: -1;
+}
+.carousel-indicators{
+    position: relative;
+    top: 37em;
+    padding: 0;
+}
+.carousel-control-prev{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(44, 44, 44);
+    left: -9%;
+    top: calc(50%);
+}
+.carousel-control-next{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(44, 44, 44);
+    right: -9%;
+    top: calc(50%);
+}
+.carousel-indicators .carousel-scrollar{
+    background-color: rgb(180, 180, 180);
+    /* border-radius: 50%; */
+    padding: 0.1rem 0;
+    margin: 0 0.5rem;
+    border-color: 2px solid rgb(255, 255, 255);
+}
+.carousel-indicators .carousel-scrollar .active{
+    background-color: rgb(0, 0, 0);
+    border-color: 2px solid rgb(0, 0, 0);
+}
+.Highlight-blogs{
+    margin-top: 100px;
+}
+
+.highlight-title{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 1.6rem;
+line-height: 2.5rem;
+letter-spacing: 0.04em;
+padding-right: 4rem;
+}
+.highlight-para{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+    /* or 179% */
+    padding-right: 4rem;
+    color: #3f3f3f;
+    letter-spacing: 0.04em;
+}
+.carousel-readtime p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: rgb(110, 110, 110);
+}
+.carousel-date p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    color: #8d8d8d;
+}
+.highlight-blog-img{
+    height: 26.1rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1em;
+}
+.Subhighlight-title{
+    padding-right: 1.4rem;
+    font-size: 1.3rem;
+    line-height: 2.26rem;
+}
+.Subhighlight-para{
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+    letter-spacing: 0.04em;
+}
+.Subhighlight-blog-img{
+    height: 16.2rem;
+    margin-top: 5rem;
+}
+.SubHighlight-blogs li{
+    display: inline;
+}
+.SubHighlight-blogs-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blogs2 h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.9rem;
+    line-height: 4rem;
+    padding-right: 3rem;
+    letter-spacing: 0.04em;
+}
+.Blogs2-top-para{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.Blogs2-para2{
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+.Blogs2-bottom{
+    margin-bottom: 6rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .highlight-title{
+        padding-right: 0;
+        }
+}
+
+@media screen and (max-width: 991px) {
+    .carousel-img {
+        border-radius: 1em;
+    }
+    .carousel-date-time{
+        display: flex;
+        justify-content: space-between;
+    }
+    .carousel-title h3{
+        font-size: 1.4rem;
+    }
+    .highlight-para{
+        font-size: 1.1rem;
+        line-height: 2.1rem;
+        /* or 179% */
+        padding-right: 2rem;
+    }
+    .carousel-readtime p{
+        padding-left: 0.75rem;
+    }
+    .carousel-date p{
+        padding-right: 0.75rem;
+    }
+    .carousel-div{
+        padding-top: 150px;
+    }
+    .carousel-img{
+        height: 24rem;
+    }
+    .highlight-blog-img{
+        height: 24rem;
+        border-radius: 1em;
+    }
+    .highlight-title{
+        font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0.04em;
+    padding-right: 0;
+    }
+    .Highlight-blogs-div{
+        padding: 0;
+        margin-top: 4rem;
+    }
+    .SubHighlight-blogs{
+        display: none;
+    }
+    .Highlight-blogs{
+        margin-top: 50px;
+    }
+    .blogs2 .date-time{
+        display: flex;
+    }
+    .Blogs2-top-para{
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+    .Blogs2-para2{
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+    .Blogs2-bottom{
+        margin-bottom: 5rem;
+    }
+    .carousel-control-prev{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: rgb(0, 0, 0);
+        left: 5%;
+        top: calc(50%);
+    }
+    .carousel-control-next{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: rgb(0, 0, 0);
+        right: 5%;
+        top: calc(50%);
+    }
+}
+@media screen and (max-width: 768px) {
+    .highlight-title{
+    padding-right: 1rem;
+    }
+    .carousel-div{
+        padding-top: 120px;
+    }
+    .highlight-blog-img{
+        height: 22rem;
+        border-radius: 0.6em;
+    }
+    .carousel-title h3{
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+    }
+    .blogs2 h1{
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+        margin-bottom: 3rem;
+    }
+    .highlight-para{
+        font-size: 1.1rem;
+        line-height: 2rem;
+        /* or 179% */
+        padding-right: 1.8rem;
+    }
+    .carousel-img {
+        height: 22rem;
+        border-radius: 0.6em;
+    }
+}
+@media screen and (max-width: 576px) {
+    .carousel-img{
+        height: 17.5rem;
+    }
+    .highlight-blog-img{
+        height: 17.5rem;
+    }
+    .highlight-para{
+        padding-right: 0;
+    }
+    .Blogs2-top-para{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    .Blogs2-para2{
+        margin-top: 3em;
+        margin-bottom: 3rem;
+    }
+    .Blogs2-bottom{
+        margin-bottom: 4rem;
+    }
+    .Highlight-blogs-div{
+        padding: 0;
+        margin-top: 2rem;
+    }
+}
