@@ -36,7 +36,7 @@
     border-radius: 50%;
     background-color: rgb(44, 44, 44);
     left: -9%;
-    top: calc(50%);
+    top: calc(35%);
 }
 .carousel-control-next{
     width: 50px;
@@ -44,7 +44,7 @@
     border-radius: 50%;
     background-color: rgb(44, 44, 44);
     right: -9%;
-    top: calc(50%);
+    top: calc(35%);
 }
 .carousel-indicators .carousel-scrollar{
     background-color: rgb(180, 180, 180);
@@ -98,13 +98,12 @@ padding-right: 4rem;
     color: #8d8d8d;
 }
 .highlight-blog-img{
-    height: 26.1rem;
+    height: 22.1rem;
     width: 100%;
     object-fit: cover;
     border-radius: 1em;
 }
 .Subhighlight-title{
-    padding-right: 1.4rem;
     font-size: 1.3rem;
     line-height: 2.26rem;
 }
@@ -186,6 +185,9 @@ padding-right: 4rem;
         height: 24rem;
         border-radius: 1em;
     }
+    .Subhighlight-blog-img{
+        height: 17.5rem;
+    }
     .highlight-title{
         font-family: Poppins;
     font-style: normal;
@@ -199,9 +201,10 @@ padding-right: 4rem;
         padding: 0;
         margin-top: 4rem;
     }
-    .SubHighlight-blogs{
+    
+    /* .SubHighlight-blogs{
         display: none;
-    }
+    } */
     .Highlight-blogs{
         margin-top: 50px;
     }

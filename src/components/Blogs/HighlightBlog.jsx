@@ -1,11 +1,11 @@
 import React from 'react'
-
-const HighlightBlog = () => {
+import Highlightdiv from './Highlightdiv'
+const HighlightBlog = (props) => {
     return (
         <div className='Highlight-blogs max-min mx-auto'>
             <div className='col-md-10 offset-md-1 px-md-5'>
                 <div className="row p-0">
-                    <div className="col-lg-6 Highlight-blogs-div px-3 px-md-3">
+                    {/* <div className="col-lg-6 Highlight-blogs-div px-3 px-md-3">
                         <div className="">
                             <img className='img-fluid highlight-blog-img' src="https://images.unsplash.com/photo-1640007973870-deb7956b1d86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="" />
                         </div>
@@ -20,8 +20,8 @@ const HighlightBlog = () => {
                                 <p className='pe-5'>5 min read</p>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-lg-6 Highlight-blogs-div px-3 px-md-3">
+                    </div> */}
+                    {/* <div className="col-lg-6 Highlight-blogs-div px-3 px-md-3">
                         <div className="">
                             <img className='img-fluid highlight-blog-img' src="https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80" alt="" />
                         </div>
@@ -36,7 +36,12 @@ const HighlightBlog = () => {
                                 <p className='pe-5'>5 min read</p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+
+                    {props.blogs.map(
+                        (blog, i) =>
+                            <Highlightdiv key={i} title = {blog.title} creationDate = {blog.creationDate} imageUrls = {blog.imageUrls[0]} texts = {blog.texts[1]} readTime = {blog.readTime}/>
+                    )}
                 </div>
             </div>
         </div>

@@ -41,6 +41,7 @@ function App() {
           <Route path="/ads" element={<Ads />} />
           <Route path="/blogs" element={<Blogspg />} />
           <Route path="/blogs2" element={<Blog2pg />} />
+          <Route path="/blogs/:id" element={<Blog2pg />} />
         </Routes>
       </BrowserRouter >
     </BlogState>
