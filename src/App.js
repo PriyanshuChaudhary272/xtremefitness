@@ -24,26 +24,29 @@ import {
 import Influencerpage from './pages/Influencer';
 import Ads from './pages/Adspg';
 import BlogState from './Context/Blogs/BlogState';
+import BlogCrouselState from './Context/blogsCarousel/carouselState';
 function App() {
   return (
     <BlogState>
-      <BrowserRouter>
-        <ScrolltoTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/terms" element={<Terms />} />
-          <Route path="/career" element={<Career />} />
-          <Route path="/brands" element={<Brands />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/influencers" element={<Influencerpage />} />
-          <Route path="/ads" element={<Ads />} />
-          <Route path="/blogs" element={<Blogspg />} />
-          <Route path="/blogs2" element={<Blog2pg />} />
-          <Route path="/blogs/:id" element={<Blog2pg />} />
-        </Routes>
-      </BrowserRouter >
+      <BlogCrouselState>
+        <BrowserRouter>
+          <ScrolltoTop />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/career" element={<Career />} />
+            <Route path="/brands" element={<Brands />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/influencers" element={<Influencerpage />} />
+            <Route path="/ads" element={<Ads />} />
+            <Route path="/blogs" element={<Blogspg />} />
+            <Route path="/blogs2" element={<Blog2pg />} />
+            <Route path="/blogs/:id" element={<Blog2pg />} />
+          </Routes>
+        </BrowserRouter >
+      </BlogCrouselState>
     </BlogState>
   );
 }

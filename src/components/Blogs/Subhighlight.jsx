@@ -23,7 +23,7 @@ const Subhighlight = (props) => {
                 <div className="">
                     <img className='img-fluid highlight-blog-img Subhighlight-blog-img' src={props.imageUrls}alt="" />
                 </div>
-                <h3 className='ps-1 mt-3 mt-md-5 highlight-title Subhighlight-title'>{props.title}</h3>
+                <h3 className='ps-1 mt-3 mt-md-5 highlight-title Subhighlight-title'>{props.title}...</h3>
                 <p className='ps-1 mt-3 mt-md-4 highlight-para Subhighlight-para'>{props.texts}... </p>
                 <div className="highlights-date-time d-flex justify-content-between mt-4 mt-lg-5">
                     <div className="carousel-date">

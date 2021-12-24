@@ -36,7 +36,7 @@
     border-radius: 50%;
     background-color: rgb(44, 44, 44);
     left: -9%;
-    top: calc(35%);
+    top: calc(15rem);
 }
 .carousel-control-next{
     width: 50px;
@@ -44,7 +44,7 @@
     border-radius: 50%;
     background-color: rgb(44, 44, 44);
     right: -9%;
-    top: calc(35%);
+    top: calc(15rem);
 }
 .carousel-indicators .carousel-scrollar{
     background-color: rgb(180, 180, 180);
@@ -135,7 +135,7 @@ padding-right: 4rem;
     letter-spacing: 0.04em;
 }
 .Blogs2-top-para{
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-bottom: 5rem;
 }
 .Blogs2-para2{
@@ -144,6 +144,10 @@ padding-right: 4rem;
 }
 .Blogs2-bottom{
     margin-bottom: 6rem;
+}
+.blog2-carousel{
+    padding-top: 0;
+    margin-top: 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -238,6 +242,10 @@ padding-right: 4rem;
         right: 5%;
         top: calc(50%);
     }
+    .blog2-carousel{
+        margin-top: 0;
+        padding-top: 0;
+    }
 }
 @media screen and (max-width: 768px) {
     .highlight-title{
@@ -269,6 +277,10 @@ padding-right: 4rem;
         height: 22rem;
         border-radius: 0.6em;
     }
+    .blog2-carousel{
+        margin-top: 0;
+        padding-top: 0;
+    }
 }
 @media screen and (max-width: 576px) {
     .carousel-img{
@@ -294,5 +306,25 @@ padding-right: 4rem;
     .Highlight-blogs-div{
         padding: 0;
         margin-top: 2rem;
+    }
+    .blog2-carousel{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .carousel-control-prev{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: rgba(46, 46, 46, 0.699);
+        left: 5%;
+        top: calc(23%);
+    }
+    .carousel-control-next{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: rgba(46, 46, 46, 0.699);
+        right: 5%;
+        top: calc(23%);
     }
 }

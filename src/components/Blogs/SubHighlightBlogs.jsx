@@ -8,7 +8,7 @@ const SubHighlightBlogs = (props) => {
                     {/* create a map over fetched data a return the following div with appropriate assignment of data */}
                     {props.blogs.map(
                         (blog, i) =>
-                            <Subhighlight key={i} title = {blog.title} creationDate = {blog.creationDate} imageUrls = {blog.imageUrls[0]} texts = {blog.texts[1].slice(0,70)} readTime = {blog.readTime}/>
+                            <Subhighlight key={i} title = {blog.title[0].slice(0,100)} creationDate = {blog.creationDate} imageUrls = {blog.imageUrls[0]} texts = {blog.texts[0].slice(0,150)} readTime = {blog.readTime}/>
                     )}
                 </div>
             </div>

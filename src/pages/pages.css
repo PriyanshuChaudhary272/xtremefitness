@@ -1,0 +1,9 @@
+.Go-back{
+    border-radius: 50%;
+    background-color: black;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

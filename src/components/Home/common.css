@@ -396,7 +396,7 @@ a{
         bottom: -7.4rem;
     }
     .subherodiv{
-        padding-top: 80px;
+        padding-top: 60px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -477,7 +477,7 @@ a{
         bottom: 0;
     }
     .herodiv{
-        margin: 10vh 0;
+        margin: 10vh 0 8vh 0;
     }
 }
 @media screen and (min-width: 1904px) {
@@ -495,5 +495,22 @@ a{
     .herodiv h1{
         font-size: 2.3rem;
         width: 70%;
+    }
+    .herodiv{
+        margin: 10vh 0 6vh 0;
+    }
+    .herodiv{
+        margin: 6vh 0 4vh 0;
+    }
+    .triangleimg{
+        bottom: -1rem;
+    }
+    .subherodiv{
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 381px) {
+    .triangleimg{
+        bottom: -10rem;
     }
 }

@@ -19,11 +19,19 @@ function Brands(props) {
                                 <h1 className='mb-2 mb-lg-5'>{props.heading}</h1>
                                 <p>{props.para}</p>
                                     <img src={img2} className='dotline' alt="" />
-                                <div className='mt-3'>
+                                {/* <div className='mt-3'>
                                     <a className="navbar-brand" href='https://firebasestorage.googleapis.com/v0/b/flytant-app.appspot.com/o/androidApp%2FFlytant_1.0.4.apk?alt=media&amp;token=6e76d120-97a7-44d0-af2b-cd99466b0db0'>
                                         <img src={linkbtn1} className='d-inline mt-2 herobtn' alt="" width="180" />
                                     </a>
                                     <a className="navbar-brand" href='https://apps.apple.com/in/app/flytant/id1530158515'>
+                                        <img src={linkbtn2} className='d-inline mt-2 herobtn' alt="" width="180" />
+                                    </a>
+                                </div> */}
+                                <div className='homepage-download-links d-flex flex-column flex-md-row'>
+                                    <a className="navbar- brand me-0 me-md-3" href='https://firebasestorage.googleapis.com/v0/b/flytant-app.appspot.com/o/androidApp%2FFlytant_1.0.4.apk?alt=media&amp;token=6e76d120-97a7-44d0-af2b-cd99466b0db0'>
+                                        <img src={linkbtn1} className='d-inline mt-2 herobtn' alt="" width="180" />
+                                    </a>
+                                    <a className="navbar- brand" href='https://apps.apple.com/in/app/flytant/id1530158515'>
                                         <img src={linkbtn2} className='d-inline mt-2 herobtn' alt="" width="180" />
                                     </a>
                                 </div>

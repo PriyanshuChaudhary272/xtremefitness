@@ -42,9 +42,11 @@ function Hero() {
                                             :
                                             <>
                                                 <div className="video-box">
-                                                    <img className='video1 img-fluid' src={vdimg} alt='videoimg' />
-                                                    <div className="player-controls play-button" style={{ width: '20%' }}>
-                                                        <img src={playbutton} className="navbar-brand" style={{ cursor: 'pointer' }} onClick={handleclick} alt="" width="55%" />
+                                                    <div className='play-reference'>
+                                                        <img className='video1 img-fluid' src={vdimg} alt='videoimg' />
+                                                        <div className="player-controls play-button" style={{ width: '10%' }}>
+                                                            <img src={playbutton} className="navbar-brand" style={{ cursor: 'pointer' }} onClick={handleclick} alt="" width="100%" />
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </>

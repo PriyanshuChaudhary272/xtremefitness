@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './images/logo_top.png'
-import footerlink1 from './images/ios footer.png'
-import footerlink2 from './images/android footer.png'
+import footerlink1 from './contacticons/Group 1668 (1).png'
+import footerlink2 from './contacticons/Group 1667.png'
 import s1 from './images/insta.png'
 import s2 from './images/youtube.png'
 import s3 from './images/fb.png'
@@ -79,10 +79,10 @@ function Footer() {
                                 <div className="d-flex flex-column align-items-center justify-content-center">
                                     <p className='getthe'>Get the apps!</p>
                                     <div className='d-flex flex-column align-items-center justify-content-center'>
-                                        <a className="navbar-brand" href='https://apps.apple.com/in/app/flytant/id1530158515' target="_blank" rel="noreferrer" >
+                                        <a className="navbar-brand m-0" href='https://apps.apple.com/in/app/flytant/id1530158515' target="_blank" rel="noreferrer" >
                                             <img src={footerlink1} className='d-inline' alt="" width="220" />
                                         </a>
-                                        <a className="navbar-brand" href='https://firebasestorage.googleapis.com/v0/b/flytant-app.appspot.com/o/androidApp%2FFlytant_1.0.4.apk?alt=media&amp;token=6e76d120-97a7-44d0-af2b-cd99466b0db0' target="_blank" rel="noreferrer" >
+                                        <a className="navbar-brand m-0" href='https://firebasestorage.googleapis.com/v0/b/flytant-app.appspot.com/o/androidApp%2FFlytant_1.0.4.apk?alt=media&amp;token=6e76d120-97a7-44d0-af2b-cd99466b0db0' target="_blank" rel="noreferrer" >
                                             <img src={footerlink2} className='d-inline my-4' alt="" width="220" />
                                         </a>
                                     </div>

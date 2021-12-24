@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
 import './Blogs.css'
 import { timeConverter } from '../../Utils/datetime'
 // import right from './BlogsImgs/right.png'
 // import left from './BlogsImgs/left.png'
 const Carousel = (props) => {
+    const navigate = useNavigate();
+
+    const handleClick = (blogs, otherblogs) => {
+        navigate('/blogs2', { state: {blogs: blogs, otherblogs: otherblogs} })
+    }
+    const location = useLocation();
+    useEffect(() => {
+        if(location.pathname === '/blogs')
+        {
+            document.getElementsByClassName('carousel-div')[0].style.cursor = "pointer"
+        }
+    }, [])
     return (
         <div className='carousel-div max-min mx-auto'>
             <div className='carousel-content col-md-10 offset-md-1 px-3 px-md-5'>
@@ -22,31 +35,31 @@ const Carousel = (props) => {
                     <div className="carousel-inner">
                         {props.blogs.map(
                             (blog, i) =>
-                                <div className={`carousel-item ${i === 0 ? "active" : ""}`} key={i}>
-                                    {/* <a href="/blogs2" className='carousel-div-link' key={i}> */}
-                                        <div className='carousel-img-container'>
-                                            <img className='img-fluid carousel-img' src={blog.imageUrls[0]} alt="" />
+                                <div className={`carousel-item ${i === 0 ? "active" : ""} pb-5`} key={i}>
+                                    {/* <a href="/" className='carousel-div-link' key={i} > */}
+                                    <div className='carousel-img-container' onClick={() =>handleClick(blog, props.otherblogs)}>
+                                        <img className='img-fluid carousel-img' src={blog.imageUrls[0]} alt="" />
+                                    </div>
+                                    <div className="carousel-details row mt-3 mt-md-5">
+                                        <div className="carousel-title col-lg-10">
+                                            <h3 className='pe-2 pe-md-4'>{blog.title[0].slice(0,90)}...</h3>
                                         </div>
-                                        <div className="carousel-details row mt-3 mt-md-5">
-                                            <div className="carousel-title col-lg-10">
-                                                <h3 className='pe-2 pe-md-4'>{blog.title}</h3>
-                                            </div>
-                                            <div className="col-lg-2 p-0">
-                                                <div className=" col-xl-8 carousel-date-time mt-4 mt-lg-0">
-                                                    <div className="carousel-readtime">
-                                                        <p className='text-end m-0'>{blog.readTime} min read</p>
-                                                    </div>
-                                                    <div className="carousel-date">
-                                                        <span><p className='text-end'>{timeConverter(blog.creationDate)}</p></span>
-                                                    </div>
+                                        <div className="col-lg-2 p-0">
+                                            <div className=" col-xl-8 carousel-date-time mt-4 mt-lg-0">
+                                                <div className="carousel-readtime">
+                                                    <p className='text-end m-0'>{blog.readTime} min read</p>
+                                                </div>
+                                                <div className="carousel-date">
+                                                    <span><p className='text-end'>{timeConverter(blog.creationDate)}</p></span>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
                                     {/* </a> */}
                                 </div>
                         )}
                         {/* <div className="carousel-item">
-                            <a href="/blogs2" className='carousel-div-link'>
+                                    <a href="/blogs2" className='carousel-div-link'>
                                 <div className='carousel-img-container'>
                                     <img className='img-fluid carousel-img' src="https://images.unsplash.com/photo-1529119368496-2dfda6ec2804?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="" />
                                 </div>
