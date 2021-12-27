@@ -5,7 +5,7 @@
     object-fit: cover;
 }
 .carousel-div{
-    padding-top: 150px;
+    padding-top: 15rem;
 }
 .carousel-div-link{
     color: black;
@@ -180,7 +180,7 @@ padding-right: 4rem;
         padding-right: 0.75rem;
     }
     .carousel-div{
-        padding-top: 150px;
+        padding-top: 200px;
     }
     .carousel-img{
         height: 24rem;
@@ -246,6 +246,12 @@ padding-right: 4rem;
         margin-top: 0;
         padding-top: 0;
     }
+}
+a{
+    color: black
+}
+a:hover{
+    color: rgb(0, 0, 0)
 }
 @media screen and (max-width: 768px) {
     .highlight-title{

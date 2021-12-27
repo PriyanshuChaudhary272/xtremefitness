@@ -19,7 +19,7 @@ const Subhighlight = (props) => {
                     </div>
                 </div>
             </div> */}
-            <div className="col-md-6 col-lg-4 mt-2 px-3 ">
+            {/* <div className="col-md-6 col-lg-4 mt-2 px-3 "> */}
                 <div className="">
                     <img className='img-fluid highlight-blog-img Subhighlight-blog-img' src={props.imageUrls}alt="" />
                 </div>
@@ -33,7 +33,7 @@ const Subhighlight = (props) => {
                         <p className='pe-4'>5{props.readTime} min read</p>
                     </div>
                 </div>
-            </div>
+            {/* </div> */}
         </>
     )
 }

@@ -1,0 +1,38 @@
+.crypto-video{
+    position: relative;
+}
+.crypto-video-playbtn{
+    position: absolute;
+    z-index: 1;
+    left: 9%;
+    bottom: 5%;
+    width: 10%;
+}
+.crypto-yt-video{
+    position: relative;
+    z-index: 1;
+}
+.crypto-hero {
+    padding: 10vh 0;
+}
+.crypto-yt-video-div{
+    min-height: 250px;
+}
+.crypto-download-btn{
+    font-weight: 500;
+}
+@media screen and (max-width: 992px) {
+    .crypto-yt-video-div{
+        min-height: 400px;
+    }
+}
+@media screen and (max-width: 768) {
+    .crypto-yt-video-div{
+        min-height: 380px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .crypto-yt-video-div{
+        min-height: 250px;
+    }
+}

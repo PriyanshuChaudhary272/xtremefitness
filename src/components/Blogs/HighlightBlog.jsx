@@ -1,8 +1,16 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import Highlightdiv from './Highlightdiv'
+import { useNavigate } from 'react-router-dom'
+import blogContext from '../../Context/Blogs/BlogContext'
 const HighlightBlog = (props) => {
+    const navigate = useNavigate();
+    const context = useContext(blogContext);
+    const {blog} = context;
+    const handleClick = (i, id) => {
+        navigate(`/blog/${id}`, {state: {index: i, blogs: blog}})
+    }
     return (
-        <div className='Highlight-blogs max-min mx-auto'>
+        <div className='Highlight-blogs max-min2 mx-auto'>
             <div className='col-md-10 offset-md-1 px-md-5'>
                 <div className="row p-0">
                     {/* <div className="col-lg-6 Highlight-blogs-div px-3 px-md-3">
@@ -40,7 +48,9 @@ const HighlightBlog = (props) => {
 
                     {props.blogs.map(
                         (blog, i) =>
-                            <Highlightdiv key={i} title = {blog.title} creationDate = {blog.creationDate} imageUrls = {blog.imageUrls[0]} texts = {blog.texts[1]} readTime = {blog.readTime}/>
+                            <div key={i} onClick={() => handleClick(i, blog.id)} className="col-lg-6 Highlight-blogs-div px-3 px-md-3" style={{cursor: "pointer"}}>
+                                <Highlightdiv title={blog.title} creationDate={blog.creationDate} imageUrls={blog.imageUrls[0]} texts={blog.texts[1]} readTime={blog.readTime} />
+                            </div>
                     )}
                 </div>
             </div>

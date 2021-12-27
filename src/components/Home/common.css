@@ -13,7 +13,7 @@ font-family: 'Readex Pro', sans-serif; */
     min-width: 300px;
 }
 .max-min2{
-    max-width: 1100px;
+    max-width: 1200px;
     min-width: 300px;
 }
 .homepage{
@@ -95,6 +95,12 @@ font-family: 'Readex Pro', sans-serif; */
 }
 .navbar4{
     background-color: transparent;
+}
+/* .navbar5 a{
+    font-size: 1.2rem;
+} */
+.navbar5 .nav-logo-name{
+    font-size: 1.8rem;
 }
 /* NAVBAR COMPLETE */
 
@@ -384,6 +390,9 @@ a{
     .triangleimg{
         bottom: -14rem;
     }
+    .navbar5 .nav-logo-name{
+        font-size: 1.6rem;
+    }
 }
 @media screen and (max-width: 540px) {
     .video-box{
@@ -397,6 +406,9 @@ a{
     }
     .subherodiv{
         padding-top: 60px;
+    }
+    .navbar5 .nav-logo-name{
+        font-size: 1.4rem;
     }
 }
 @media screen and (max-width: 768px) {
@@ -512,5 +524,8 @@ a{
 @media screen and (max-width: 381px) {
     .triangleimg{
         bottom: -10rem;
+    }
+    .navbar5 .nav-logo-name{
+        font-size: 1.2rem;
     }
 }

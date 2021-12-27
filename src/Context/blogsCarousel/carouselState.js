@@ -13,8 +13,8 @@ const BlogCrouselState = (props) => {
     const readCarousel = async () => {
         const q = query(collection(db, "blogs"),
             where("slider","==", true),
-            // orderBy("creationDate", "desc"),
             limit(8));
+            // orderBy("creationDate", "desc"),
 
         getDocs(q)
             .then(data => {

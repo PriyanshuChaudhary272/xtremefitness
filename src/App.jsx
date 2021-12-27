@@ -17,19 +17,22 @@ import ScrolltoTop from './components/ScrolltoTop';
 import Blogspg from './pages/Blogspg';
 import Blog2pg from './pages/Blog2pg';
 import {
-  BrowserRouter,
+  BrowserRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
 import Influencerpage from './pages/Influencer';
 import Ads from './pages/Adspg';
-import BlogState from './Context/Blogs/BlogState';
-import BlogCrouselState from './Context/blogsCarousel/carouselState';
+import ShibaInu from './pages/ShibaInu';
+import Btcpg from './pages/Btcpg';
+import Tetherpg from './pages/Tetherpg';
+import Ethereumpg from './pages/Ethereumpg';
+import Dogecoinpg from './pages/Dogecoinpg';
+import Solanapg from './pages/Solanapg';
+import Sandboxpg from './pages/Sandboxpg';
 function App() {
   return (
-    <BlogState>
-      <BlogCrouselState>
-        <BrowserRouter>
+        <Router>
           <ScrolltoTop />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -42,12 +45,16 @@ function App() {
             <Route path="/influencers" element={<Influencerpage />} />
             <Route path="/ads" element={<Ads />} />
             <Route path="/blogs" element={<Blogspg />} />
-            <Route path="/blogs2" element={<Blog2pg />} />
-            <Route path="/blogs/:id" element={<Blog2pg />} />
+            <Route path="/blog/:id" element ={<Blog2pg />} />
+            <Route path="/shibainu" element ={<ShibaInu />} />
+            <Route path="/bitcoin" element ={<Btcpg />} />
+            <Route path="/tether" element ={<Tetherpg />} />
+            <Route path="/ethereum" element ={<Ethereumpg />} />
+            <Route path="/dogecoin" element ={<Dogecoinpg />} />
+            <Route path="/solana" element ={<Solanapg />} />
+            <Route path="/sandbox" element ={<Sandboxpg />} />
           </Routes>
-        </BrowserRouter >
-      </BlogCrouselState>
-    </BlogState>
+        </Router >
   );
 }
 

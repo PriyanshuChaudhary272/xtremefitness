@@ -52,14 +52,14 @@ const BlogState = (props) => {
 
     // Read
     const readBlogs = async () => {
+        console.log('helo')
         const q = query(collection(db, "blogs"),
+        orderBy("creationDate", "desc"),
+        limit(5));
             // where("slider", "==", false),
-            orderBy("creationDate", "desc"),
-            limit(5));
 
         getDocs(q)
             .then(data => {
-                console.log("hello")
                 const lastvisible = data.docs[data.docs.length - 1];
                 setlastVisible(lastvisible);
                 setLast(data.docs.length)
@@ -78,10 +78,10 @@ const BlogState = (props) => {
                 limit(3));
             getDocs(nextquery)
                 .then(data => {
+                    setLast(last + data.docs.length)
                     setlastVisible(data.docs[data.docs.length - 1]);
                     const nextdata = data.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
                     setBlog((blog) => [...blog, ...nextdata]);
-                    setLast(last + data.docs.length)
                 })
                 .catch(err => {
                     console.log("error")
