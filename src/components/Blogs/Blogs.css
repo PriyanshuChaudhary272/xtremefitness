@@ -5,7 +5,7 @@
     object-fit: cover;
 }
 .carousel-div{
-    padding-top: 15rem;
+    padding-top: 11.5rem;
 }
 .carousel-div-link{
     color: black;
@@ -65,10 +65,9 @@
     font-family: Poppins;
 font-style: normal;
 font-weight: 600;
-font-size: 1.6rem;
+font-size: 1.3rem;
 line-height: 2.5rem;
 letter-spacing: 0.04em;
-padding-right: 4rem;
 }
 .highlight-para{
     font-family: Poppins;
@@ -109,7 +108,7 @@ padding-right: 4rem;
 }
 .Subhighlight-para{
     padding-right: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 2.1rem;
     letter-spacing: 0.04em;
 }
@@ -153,6 +152,7 @@ padding-right: 4rem;
 @media screen and (max-width: 1200px) {
     .highlight-title{
         padding-right: 0;
+        font-size: 1rem;
         }
 }
 

@@ -13,15 +13,15 @@ const BlogCrouselState = (props) => {
     const readCarousel = async () => {
         const q = query(collection(db, "blogs"),
             where("slider","==", true),
-            limit(8));
-            // orderBy("creationDate", "desc"),
+            orderBy("creationDate", "desc"),
+            limit(20));
 
         getDocs(q)
             .then(data => {
                 setCarousel(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
             })
             .catch(err => {
-                console.log("error")
+                console.log(err)
             })
     }
 

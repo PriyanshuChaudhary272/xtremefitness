@@ -54,9 +54,9 @@ const BlogState = (props) => {
     const readBlogs = async () => {
         console.log('helo')
         const q = query(collection(db, "blogs"),
+        where("slider", "==", false),
         orderBy("creationDate", "desc"),
         limit(5));
-            // where("slider", "==", false),
 
         getDocs(q)
             .then(data => {
@@ -66,7 +66,7 @@ const BlogState = (props) => {
                 setBlog(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
             })
             .catch(err => {
-                console.log("error")
+                console.log(err)
             })
     }
 

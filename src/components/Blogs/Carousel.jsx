@@ -45,7 +45,7 @@ const Carousel = () => {
                                         </div>
                                         <div className="carousel-details row mt-3 mt-md-5">
                                             <div className="carousel-title col-lg-10">
-                                                <h3 className='pe-2 pe-md-4'>{blog.title[0].slice(0, 90)}...</h3>
+                                                <h3 className='pe-2 pe-md-4'>{blog.title[0].slice(0, 90)}</h3>
                                             </div>
                                             <div className="col-lg-2 p-0">
                                                 <div className=" col-xl-8 carousel-date-time mt-4 mt-lg-0">

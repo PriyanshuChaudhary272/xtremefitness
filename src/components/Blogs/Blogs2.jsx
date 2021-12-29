@@ -10,37 +10,36 @@ function Blogs2() {
     // const { blogs, otherblogs } = props.state;
     const { id } = useParams();
     const { state } = useLocation();
-
+    const location = useLocation();
     // SETTING CONTEXT
     const [para, setPara] = useState([])
     const [blog, setBlog] = useState();
     const [bottom, setBottom] = useState([])
-    const[show, setShow] = useState(true)
+    const [show, setShow] = useState(true)
     // convert texts array to a matrix of 2 colums for each row
     useEffect(() => {
-
-        let  prev;
         const createarr2 = () => {
             const docRef = doc(db, "blogs", `${id}`);
             getDoc(docRef)
                 .then(data => {
                     setBlog(data.data());
-                    const prev = data.data().texts.reduce(function (prev, current, i) {
-                        return (i % 2 == 0 ? prev.push([current])
-                            : prev[prev.length - 1].push(current)) && prev;
-                    }, [])
-                    setPara(prev);
+                    // const prev = data.data().texts.reduce(function (prev, current, i) {
+                    //     return (i % 2 == 0 ? prev.push([current])
+                    //         : prev[prev.length - 1].push(current)) && prev;
+                    // }, [])
+                    setPara(data.data().texts);
                 })
             setShow(false)
         }
         const createarr = () => {
             const { index, blogs } = state;
             setBlog(blogs[index])
+            setPara(blogs[index].texts)
             setBottom(blogs);
-            prev = blogs[index].texts.reduce(function (prev, current, i) {
-                return (i % 2 == 0 ? prev.push([current])
-                    : prev[prev.length - 1].push(current)) && prev;
-            }, []);
+            // prev = blogs[index].texts.reduce(function (prev, current, i) {
+            //     return (i % 2 == 0 ? prev.push([current])
+            //         : prev[prev.length - 1].push(current)) && prev;
+            // }, []);
         }
         if (!state) {
             createarr2();
@@ -48,9 +47,9 @@ function Blogs2() {
         else {
             createarr();
             // console.log(b)
-            setPara(prev)
+            // setPara(prev)
         }
-    }, [])
+    }, [location.pathname])
     return (
 
         <>
@@ -61,7 +60,6 @@ function Blogs2() {
                     </div>
                     :
                     <div className='blogs2 carousel-div max-min2 mx-auto'>
-                        {console.log(para)}
                         <div className='carousel-content col-md-10 offset-md-1 px-3 px-md-5 '>
                             <div className="date-time">
                                 <div className="carousel-readtime">
@@ -75,23 +73,27 @@ function Blogs2() {
                             <div className='carousel-img-container'>
                                 {blog.imageUrls[0] && <img className='img-fluid carousel-img my-3 my-md-5' src={blog.imageUrls[0]} alt="" />}
                             </div>
-                            {para.map((para, i) =>
-                                <div key={i}>
-                                    {blog.title[i + 1] && <h3 className='mb-4 mt-2 mt-md-5 mb-md-4 highlight-title'>{blog.title[i + 1]}</h3>}
-                                    {para[0] && <p className='highlight-para Blogs2-top-para '>{para[0]}</p>}
-                                    {para[1] && <p className='highlight-para Blogs2-top-para '>{para[1]}</p>}
-                                    <div className='carousel-img-container'>
-                                        {blog.imageUrls[i + 1] && <img className='img-fluid carousel-img' src={blog.imageUrls[i + 1]} alt="" />}
+                            {<p className='highlight-para Blogs2-top-para '>{para[0]}</p>}
+                            {blog.texts.map((para, i) => {
+                                if (i !== 0) {
+                                    return <div key={i}>
+                                        {blog.title[i] && <h3 className='mb-4 mt-2 mt-md-5 mb-md-4 highlight-title'>{blog.title[i]}</h3>}
+                                        {para && <p className='highlight-para Blogs2-top-para '>{para}</p>}
+                                        <div className='carousel-img-container'>
+                                            {(i != 0 && i%3 == 0 && blog.imageUrls[i/3]) && <img className='img-fluid carousel-img' src={blog.imageUrls[i/3]} alt="" />}
+                                        </div>
+                                        {/* {para[1] && <p className='highlight-para Blogs2-top-para '>{para[1]}</p>} */}
                                     </div>
-                                </div>
+                                }
+                            }
                             )}
 
                             {show && <h3 className='p-0 mt-3 pt-5 mt-md-5 highlight-title Subhighlight-title'>More topics</h3>}
                         </div>
                         <div className='Blogs2-bottom'>
-                            { <SubHighlightBlogs blogs={show? bottom: []} />}
+                            {<SubHighlightBlogs blogs={show ? bottom : []} />}
                         </div>
-                        
+
                     </div>
             }
         </>
