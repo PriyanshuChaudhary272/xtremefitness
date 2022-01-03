@@ -2,7 +2,11 @@ import React from 'react';
 import whitedots from './images/white dots.png'
 // import img1 from '../images/2nd image (2).png'
 import img1 from './images/newimg.png'
+import { setlogEvent } from '../../Utils/setlogEvent';
 function Subhero() {
+    const handleClick = () => {
+        setlogEvent('Join_Now_Home', { page_title: `home` })
+    }
     return (
         <>
             <div className='subherodiv mx-auto d-lg-flex align-items-center max-min'>
@@ -21,7 +25,7 @@ function Subhero() {
                         <figure className="figure ps-5">
                             <img src={whitedots} className="figure-img figure3" alt="..." />
                         </figure>
-                        <a href="/Influencers" className='fullevent d-flex justify-content-center '>
+                        <a href="/influencers" onClick={handleClick} className='fullevent d-flex justify-content-center '>
                         <div className="row d-flex justify-content-center subhero-right mt-4">
                             <div className="col-lg-11 my-5">
                                 <h1>Flytant For Influencers</h1>

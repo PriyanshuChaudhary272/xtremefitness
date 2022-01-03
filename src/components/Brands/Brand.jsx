@@ -5,8 +5,17 @@ import linkbtn2 from '../Home/images/Group 1588.png'
 import img2 from './brandsImg/Group 1648.png'
 import Navbar4 from '../Home/navbar4';
 import triangle from './brandsImg/Vector 23.svg'
+import { setlogEvent } from '../../Utils/setlogEvent';
 import blackdots from '../Home/images/black dots.png'
+import { useLocation } from 'react-router';
 function Brands(props) {
+    const location = useLocation();
+    const handleios = () =>{
+        setlogEvent('iOS_Download', {page_title: location.pathname})
+    }
+    const handleAndroid = () =>{
+        setlogEvent('Android_Download', {page_title: location.pathname})
+    }
     return (
         <>
             <div className="brandsdiv">
@@ -29,10 +38,10 @@ function Brands(props) {
                                 </div> */}
                                 <div className='homepage-download-links d-flex flex-column flex-md-row'>
                                     <a className="navbar- brand me-0 me-md-3" href='https://firebasestorage.googleapis.com/v0/b/flytant-app.appspot.com/o/androidApp%2FFlytant_1.0.4.apk?alt=media&amp;token=6e76d120-97a7-44d0-af2b-cd99466b0db0'>
-                                        <img src={linkbtn1} className='d-inline mt-2 herobtn' alt="" width="180" />
+                                        <img src={linkbtn1} onClick={handleAndroid} className='d-inline mt-2 herobtn' alt="" width="180" />
                                     </a>
                                     <a className="navbar- brand" href='https://apps.apple.com/in/app/flytant/id1530158515'>
-                                        <img src={linkbtn2} className='d-inline mt-2 herobtn' alt="" width="180" />
+                                        <img src={linkbtn2}onClick={handleios} className='d-inline mt-2 herobtn' alt="" width="180" />
                                     </a>
                                 </div>
                             </div>

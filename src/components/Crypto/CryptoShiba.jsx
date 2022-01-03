@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import img2 from '../Brands/brandsImg/Group 1648.png'
 import Navbar5 from '../Home/navbar5';
 import triangle from './CryptoImgs/Vector 24.svg'
 import img1 from './CryptoImgs/Group 3519.png'

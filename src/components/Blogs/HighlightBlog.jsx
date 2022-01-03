@@ -2,11 +2,15 @@ import React, {useContext} from 'react'
 import Highlightdiv from './Highlightdiv'
 import { useNavigate } from 'react-router-dom'
 import blogContext from '../../Context/Blogs/BlogContext'
+import { useLocation } from 'react-router-dom'
+import { setlogEvent } from '../../Utils/setlogEvent'
 const HighlightBlog = (props) => {
     const navigate = useNavigate();
+    const location = useLocation();
     const context = useContext(blogContext);
     const {blog} = context;
     const handleClick = (i, id) => {
+        setlogEvent('Highlight_Blog',{ page_title: `${location.pathname}`})
         navigate(`/blog/${id}`, {state: {index: i, blogs: blog}})
     }
     return (

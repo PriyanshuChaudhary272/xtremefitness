@@ -7,7 +7,7 @@ const Btc = () => {
     return (
         <div>
             <CryptoShiba heading={<span>Grab Unlimited <br /> Free Bitcoin</span>} para ={<span>Download the App to collect <br />
-Rewards & WithdrawTether Bitcoin</span>}back= {img1} back={img1} navText="Bitcoin" navLogo ={logo} img ={img}/>
+Rewards & WithdrawTether Bitcoin</span>}back= {img1} navText="Bitcoin" navLogo ={logo} img ={img}/>
         </div>
     )
 }

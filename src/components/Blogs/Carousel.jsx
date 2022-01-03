@@ -4,6 +4,7 @@ import './Blogs.css'
 import { timeConverter } from '../../Utils/datetime'
 import { useContext } from 'react'
 import blogCarouselContext from '../../Context/blogsCarousel/carouselContext'
+import { setlogEvent } from '../../Utils/setlogEvent'
 // import right from './BlogsImgs/right.png'
 // import left from './BlogsImgs/left.png'
 const Carousel = () => {
@@ -12,13 +13,23 @@ const Carousel = () => {
     const context1 = useContext(blogCarouselContext);
     const { carousel } = context1;
     const handleClick = (i, id) => {
+        setlogEvent('Slider_Blog', { page_title: '/blogs' })
         navigate(`/blog/${id}`, { state: { index: i, blogs: carousel } })
+    }
+    const handlebtns = (i) =>{
+        if(i === 'prev'){
+            setlogEvent('Slider_Prev', { page_title: '/blogs' })
+        }
+        else{
+            setlogEvent('Slider_Next', { page_title: '/blogs' })
+        }
     }
     const location = useLocation();
     useEffect(() => {
         if (location.pathname === '/blogs') {
             document.getElementsByClassName('carousel-div')[0].style.cursor = "pointer"
         }
+        // eslint-disable-next-line
     }, [])
     return (
         <div className='carousel-div max-min2 mx-auto'>
@@ -64,11 +75,11 @@ const Carousel = () => {
                     </div>
                     {carousel.length > 1 ?
                         <>
-                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <button onClick={() =>{handlebtns('prev')}} className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span className="visually-hidden">Previous</span>
                             </button>
-                            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <button onClick={() =>{handlebtns('next')}} className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span className="visually-hidden">Next</span>
                             </button>

@@ -3,9 +3,13 @@ import img3 from './About/young-woman-blogger-recording-video-camera 1.png'
 import img4 from './About/young-woman-blogger-recording-video-camera 2.png'
 import img6 from './About/african-american-vlogger-using-smartphone-film-podcast 1.png'
 import img5 from './About/woman-doing-beauty-vlog-home 1.png'
+import { setlogEvent } from '../../Utils/setlogEvent';
 import './about.css'
 import { Link } from 'react-router-dom'
 const Hero = () => {
+    const handleClick = () =>{
+        setlogEvent('Download_Now_About', { page_title: '/about' });
+    }
     return (
         <>
             <div>
@@ -91,7 +95,7 @@ const Hero = () => {
                 </h2>
                 <p className='mt-3'>Fastest Growing Influencers Community
                 </p>
-                <Link className='btn btn-dark rounded-pill px-5 py-3 mt-3 joinus' to="/">Download Now
+                <Link onClick={handleClick} className='btn btn-dark rounded-pill px-5 py-3 mt-3 joinus' to="/">Download Now
                 </Link>
             </div>
             <div className="row d-flex justify-content-center aboutdiv last  max-min mx-auto">

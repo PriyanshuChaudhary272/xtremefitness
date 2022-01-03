@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import {useNavigate} from "react-router-dom";
 import './Contact.css'
 import Contactus from '../Home/contacticons'
+import { setlogEvent } from '../../Utils/setlogEvent';
 
 const Contact = () => {
     const navigate = useNavigate();
@@ -15,6 +16,7 @@ const Contact = () => {
         settext(e.target.value)
     }
     const handlesubmit = async(e) =>{
+        setlogEvent('Submit_Contact_Form', {page_title: '/contact'})
         e.preventDefault();
         // const response = await fetch('http://localhost:5000/sendmailContact',{
         const response = await fetch('https://flytant-1test-server.herokuapp.com/sendmailContact',{

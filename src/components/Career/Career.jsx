@@ -5,6 +5,7 @@ import Contactus from '../Home/contacticons'
 import { useNavigate } from "react-router-dom";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { storage } from '../../firebase';
+import { setlogEvent } from '../../Utils/setlogEvent';
 const Career = () => {
     const [progress, setprogress] = useState(0)
     const navigate = useNavigate();
@@ -74,6 +75,7 @@ const Career = () => {
     //     return false; // Prevent page refresh
     //  }
     const handlesubmit = async (e) => {
+        setlogEvent('Submit_Career_Form',  {page_title: '/career'})
         e.preventDefault();
         console.log(f);
         await uploadFiles(f)

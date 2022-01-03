@@ -2,18 +2,16 @@ import React, { useContext, useEffect } from 'react'
 import Subhighlight from './Subhighlight'
 import { useNavigate, useLocation } from 'react-router-dom'
 import blogContext from '../../Context/Blogs/BlogContext'
-import blogCarouselContext from '../../Context/blogsCarousel/carouselContext'
+import { setlogEvent } from '../../Utils/setlogEvent'
 const SubHighlightBlogs = (props) => {
     const navigate = useNavigate();
     const context = useContext(blogContext);
     const path = useLocation();
     const { blog } = context;
-    const context1 = useContext(blogCarouselContext);
-    const { carousel } = context1;
     useEffect(() => {
-        console.log(path.pathname)
     }, [])
     const handleClick = (i, id) => {
+        setlogEvent('Sub_Highlight_Blog', { page_title: `${path.pathname}`})
         if (path.pathname === '/blogs') { 
             return navigate(`/blog/${id}`, { state: { index: i + 2, blogs: blog } }) 
         }

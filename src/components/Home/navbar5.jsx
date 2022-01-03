@@ -1,7 +1,6 @@
 import React from 'react';
 import './common.css'
 import logo from "./NavbarImg/image (3).png"
-import { Link } from 'react-router-dom';
 function Navbar5(props) {
     return (
         <>

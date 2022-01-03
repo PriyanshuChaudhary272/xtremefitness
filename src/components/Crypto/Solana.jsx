@@ -7,7 +7,7 @@ const Solana = () => {
     return (
         <div>
             <CryptoShiba heading={<span> Grab Unlimited <br /> Free Solana </span>} para ={<span>Download the App to collect <br />
-Rewards & WithdrawTether Solana</span>} back= {img1} back={img1} navText="Tether" navLogo ={logo} img ={img}/>
+Rewards & WithdrawTether Solana</span>} back= {img1} navText="Tether" navLogo ={logo} img ={img}/>
         </div>
     )
 }

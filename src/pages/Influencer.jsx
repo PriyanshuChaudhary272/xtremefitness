@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Footer from '../components/Home/footer'
 import Influencers from '../components/Influencers/Influencers'
 import Soundinteresting from '../components/AboutUs/Soundinteresting'
 import Collagecollectioninflu from '../components/Brands/Collagecollectioninflu'
+// import { setlogEvent } from '../Utils/setlogEvent'
 const Influencerpage = () => {
+    useEffect(() => {
+        // setlogEvent("page_view",{page_title: "influencers"});
+    }, [])
     return (
         <div>
             <Influencers />

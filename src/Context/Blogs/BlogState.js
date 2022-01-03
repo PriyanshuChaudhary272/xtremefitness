@@ -52,7 +52,6 @@ const BlogState = (props) => {
 
     // Read
     const readBlogs = async () => {
-        console.log('helo')
         const q = query(collection(db, "blogs"),
         where("slider", "==", false),
         orderBy("creationDate", "desc"),
@@ -74,6 +73,7 @@ const BlogState = (props) => {
         if (lastVisible) {
             const nextquery = query(collection(db, "blogs"),
                 orderBy("creationDate", "desc"),
+                where("slider", "==", false),
                 startAfter(lastVisible),
                 limit(3));
             getDocs(nextquery)

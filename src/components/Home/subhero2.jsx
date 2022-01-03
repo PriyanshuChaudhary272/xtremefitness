@@ -1,13 +1,18 @@
 import React from 'react';
 import img1 from './images/happy-young-woman-listening-music-smiling-trendy-blue-neon-studio 1.png';
+import { setlogEvent } from '../../Utils/setlogEvent';
+
 function Subhero2() {
+    const handleClick = () => {
+        setlogEvent('Promote_Now_Home', { page_title: 'home' })
+    }
     return (
         <>
             <div className='mx-auto max-min'>
                 <div className='subherodiv subherodiv2 ms-auto'>
                     <div className="row d-flex flex-column flex-md-row mt-3 mt-md-0">
                         <div className="col-md-6 d-flex flex-column justify-content-center align-items-center subhero2-left-box subhero2-left-back">
-                            <a href="/Brands" className='fullevent mx-md-5'>
+                            <a href="/brands" onClick={handleClick}className='fullevent mx-md-5'>
                                 <div className="row d-flex justify-content-center subhero2-left">
                                     <div className="col-md-11 my-5">
                                         <h1>Flytant For <br />Brands</h1>

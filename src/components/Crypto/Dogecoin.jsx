@@ -7,7 +7,7 @@ const Dogecoin = () => {
     return (
         <div>
             <CryptoShiba heading={<span> Grab Unlimited <br /> Free Dogecoin </span>} para ={<span>Download the App to collect <br />
-Rewards & Withdraw Dogecoin</span>} back= {img1} back={img1} navText="Bitcoin" navLogo ={logo} img ={img}/>
+Rewards & Withdraw Dogecoin</span>} back= {img1} navText="Bitcoin" navLogo ={logo} img ={img}/>
         </div>
     )
 }

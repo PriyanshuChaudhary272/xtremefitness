@@ -37,13 +37,13 @@ import img46 from './gamingimg/unsplash_TpdRP89z8G4.png'
 import img47 from './gamingimg/unsplash_ugjPgy2BQug.png'
 // fourth
 
-import img51 from '/Users/priyanshuchaudhary/Flytant/client/src/components/Brands/Healthimg/unsplash_1VK2fIlgoFQ.png'
-import img52 from '/Users/priyanshuchaudhary/Flytant/client/src/components/Brands/Healthimg/unsplash_6FRc5pd1Z8g.png'
-import img53 from '/Users/priyanshuchaudhary/Flytant/client/src/components/Brands/Healthimg/unsplash_eot-ka5dM7Q.png'
-import img54 from '/Users/priyanshuchaudhary/Flytant/client/src/components/Brands/Healthimg/unsplash_FUEcC64bwZY.png'
-import img55 from '/Users/priyanshuchaudhary/Flytant/client/src/components/Brands/Healthimg/unsplash_nCya9c9AadA.png'
-import img56 from '/Users/priyanshuchaudhary/Flytant/client/src/components/Brands/Healthimg/unsplash_sHfo3WOgGTU.png'
-import img57 from '/Users/priyanshuchaudhary/Flytant/client/src/components/Brands/Healthimg/unsplash_Ug9ZVq24CIk.png'
+import img51 from './Healthimg/unsplash_1VK2fIlgoFQ.png'
+import img52 from './Healthimg/unsplash_6FRc5pd1Z8g.png'
+import img53 from './Healthimg/unsplash_eot-ka5dM7Q.png'
+import img54 from './Healthimg/unsplash_FUEcC64bwZY.png'
+import img55 from './Healthimg/unsplash_nCya9c9AadA.png'
+import img56 from './Healthimg/unsplash_sHfo3WOgGTU.png'
+import img57 from './Healthimg/unsplash_Ug9ZVq24CIk.png'
 const Collagecollection = () => {
     return (
         <div>

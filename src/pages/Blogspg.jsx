@@ -8,14 +8,15 @@ import blogContext from '../Context/Blogs/BlogContext'
 import Double from './Images/Infinity-2s-287px.gif'
 import blogCarouselContext from '../Context/blogsCarousel/carouselContext'
 // import {useSelector, useDispatch} from 'react-redux'
-import Highlightdiv from '../components/Blogs/Highlightdiv'
+// import Highlightdiv from '../components/Blogs/Highlightdiv'
+import { setlogEvent } from '../Utils/setlogEvent'
 const Blogspg = () => {
     // REDUX
     // const dispatch = useDispatch();
     // let count = useSelector(state => state)
 
     const context = useContext(blogContext);
-    const { blog, addBlog, readBlogs, paginateBlogs, last } = context;
+    const { blog, readBlogs, paginateBlogs, last } = context;
     const [prev, setPrev] = useState();
     
     const context1 = useContext(blogCarouselContext);
@@ -40,6 +41,7 @@ const Blogspg = () => {
         // REDUX
         // dispatch({type: "paginate"});
 
+        setlogEvent('Load_More_Blogs', { page_title: '/blogs' })
         setPrev(last);
         await paginateBlogs();
     }

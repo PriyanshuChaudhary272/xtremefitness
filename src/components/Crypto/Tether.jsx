@@ -7,7 +7,7 @@ const Tether = () => {
     return (
         <div>
             <CryptoShiba heading={<span> Grab Unlimited <br /> Free Tether </span>} para ={<span>Download the App to collect <br />
-Rewards & Withdraw Tether USDT</span>} back= {img1} back={img1} navText="Tether" navLogo ={logo} img ={img}/>
+Rewards & Withdraw Tether USDT</span>} back= {img1}navText="Tether" navLogo ={logo} img ={img}/>
         </div>
     )
 }

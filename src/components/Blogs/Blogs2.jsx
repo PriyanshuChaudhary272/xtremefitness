@@ -6,6 +6,7 @@ import { useLocation, useParams } from 'react-router-dom'
 import { db } from '../../firebase'
 import Double from '../../pages/Images/Infinity-2s-287px.gif'
 import { doc, getDoc } from "firebase/firestore";
+import GoogleAds from '../../adsense/Advertisement'
 function Blogs2() {
     // const { blogs, otherblogs } = props.state;
     const { id } = useParams();
@@ -46,9 +47,8 @@ function Blogs2() {
         }
         else {
             createarr();
-            // console.log(b)
-            // setPara(prev)
         }
+        // eslint-disable-next-line
     }, [location.pathname])
     return (
 
@@ -80,7 +80,12 @@ function Blogs2() {
                                         {blog.title[i] && <h3 className='mb-4 mt-2 mt-md-5 mb-md-4 highlight-title'>{blog.title[i]}</h3>}
                                         {para && <p className='highlight-para Blogs2-top-para '>{para}</p>}
                                         <div className='carousel-img-container'>
-                                            {(i != 0 && i%3 == 0 && blog.imageUrls[i/3]) && <img className='img-fluid carousel-img' src={blog.imageUrls[i/3]} alt="" />}
+                                            {(i !== 0 && i % 3 === 0 && blog.imageUrls[i / 3]) && <img className='img-fluid carousel-img' src={blog.imageUrls[i / 3]} alt="" />}
+                                            {(i !== 0 && i % 3 === 0) &&
+                                                <div className='mt-2'>
+                                                <GoogleAds slot = "6834377830"/>
+                                                </div>
+                                            }
                                         </div>
                                         {/* {para[1] && <p className='highlight-para Blogs2-top-para '>{para[1]}</p>} */}
                                     </div>
@@ -94,27 +99,27 @@ function Blogs2() {
                             {<SubHighlightBlogs blogs={show ? bottom : []} />}
                         </div>
 
+                        {/* <p className='highlight-para Blogs2-para2 '>Influencer marketing has seen an upward growth curve ever since social media became an integral part of our lives. social media became an integral part of our lives. Influencer marketing has seen an upward growth curve ever since social media became an integral part of our lives. social media became an integral part of our lives. Influencer marketing has seen an upward growth curve ever since social media became an integral part of our lives.</p>
+                        <p className='highlight-para mb-5'>An upward growth curve ever since social media became an integral part of our lives. social media became an integral part of our lives. Influencer marketing has seen an upward growth curve ever since social media became an integral part of our lives. </p>
+                        {
+                            <div className="row p-0">
+                                <div className="col-lg-6 Highlight-blogs-div px-0 px-lg-3">
+                                    <img className='img-fluid highlight-blog-img' src="https://images.unsplash.com/photo-1640007973870-deb7956b1d86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="" />
+                                </div>
+                                <div className="col-lg-6 Highlight-blogs-div px-0 px-lg-3">
+                                    <img className='img-fluid highlight-blog-img' src="https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80" alt="" />
+                                </div>
+                            </div>
+                        }
+                        <p className='highlight-para Blogs2-para2'>An upward growth curve ever since social media became an integral part of our lives. social media became an integral part of our lives. Influencer marketing has seen an upward growth curve ever since social media became an integral part of our lives. </p>
+                        <div className='carousel-img-container'>
+                            <img className='img-fluid carousel-img' src="https://images.unsplash.com/photo-1529119368496-2dfda6ec2804?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="" />
+                        </div> */}
+                        {/* <SoundButton button="Subscribe newsletter" /> */}
                     </div>
             }
         </>
     )
 }
 // 
-{/* <p className='highlight-para Blogs2-para2 '>Influencer marketing has seen an upward growth curve ever since social media became an integral part of our lives. social media became an integral part of our lives. Influencer marketing has seen an upward growth curve ever since social media became an integral part of our lives. social media became an integral part of our lives. Influencer marketing has seen an upward growth curve ever since social media became an integral part of our lives.</p>
-<p className='highlight-para mb-5'>An upward growth curve ever since social media became an integral part of our lives. social media became an integral part of our lives. Influencer marketing has seen an upward growth curve ever since social media became an integral part of our lives. </p>
-{
-    <div className="row p-0">
-        <div className="col-lg-6 Highlight-blogs-div px-0 px-lg-3">
-            <img className='img-fluid highlight-blog-img' src="https://images.unsplash.com/photo-1640007973870-deb7956b1d86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="" />
-        </div>
-        <div className="col-lg-6 Highlight-blogs-div px-0 px-lg-3">
-            <img className='img-fluid highlight-blog-img' src="https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80" alt="" />
-        </div>
-    </div>
-}
-<p className='highlight-para Blogs2-para2'>An upward growth curve ever since social media became an integral part of our lives. social media became an integral part of our lives. Influencer marketing has seen an upward growth curve ever since social media became an integral part of our lives. </p>
-<div className='carousel-img-container'>
-    <img className='img-fluid carousel-img' src="https://images.unsplash.com/photo-1529119368496-2dfda6ec2804?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="" />
-</div> */}
-{/* <SoundButton button="Subscribe newsletter" /> */ }
 export default Blogs2

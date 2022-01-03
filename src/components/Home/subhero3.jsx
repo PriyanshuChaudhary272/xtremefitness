@@ -1,6 +1,10 @@
 import React from 'react';
+import { setlogEvent } from '../../Utils/setlogEvent';
 import img1 from './images/celebrate-beautiful-young-women-carnival-stylish-masquerade-costume-with-feathers-black-background-neon-light-copyspace-ad-holidays-celebration-dancing-fashion-festive-time-party 1.png';
 function Subhero3() {
+    const handleClick = () => {
+        setlogEvent('Get_Onboard_Home', { page_title: 'home' })
+    }
     return (
         <>
             <div className='subherodiv mx-auto subherodiv2 subherodiv3 d-flex align-items-center max-min justify-content-center'>
@@ -13,7 +17,7 @@ function Subhero3() {
                         </div>
                     </div>
                     <div className="col-md-6 d-flex flex-column justify-content-center align-items-center subhero3-right">
-                        <a href="/" className='fullevent'>
+                        <a href="/" onClick={handleClick} className='fullevent'>
                             <div className="row d-flex justify-content-center subhero-right ">
                                 <div className=" col-md-11 my-5">
                                     <h1>Its all here. <br /> all in one spot.</h1>

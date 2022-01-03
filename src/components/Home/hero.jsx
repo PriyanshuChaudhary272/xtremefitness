@@ -3,12 +3,20 @@ import vdimg from './images/Group 1617.png'
 import playbutton from './images/playbutton.png'
 import linkbtn1 from './images/Group 1587.png'
 import linkbtn2 from './images/Group 1588.png'
+import { setlogEvent } from '../../Utils/setlogEvent';
 import triangle from './images/Rectangle 1355.svg'
 function Hero() {
     const [play, setPlay] = useState(false);
     const handleclick = (e) => {
         e.preventDefault();
         setPlay(true)
+        setlogEvent('Play_Video_Home', {page_title: 'home'})
+    }
+    const handleios = () =>{
+        setlogEvent('iOS_Download', {page_title: 'home'})
+    }
+    const handleAndroid = () =>{
+        setlogEvent('Android_Download', {page_title: 'home'})
     }
     return (
         <>
@@ -21,10 +29,10 @@ function Hero() {
                                 <p className="my-3 mb-md-5">Find influencers and brands of your niche</p>
                                 <div className='homepage-download-links d-flex flex-column flex-lg-row'>
                                     <a className="navbar- brand me-0 me-md-3" href='https://firebasestorage.googleapis.com/v0/b/flytant-app.appspot.com/o/androidApp%2FFlytant_1.0.4.apk?alt=media&amp;token=6e76d120-97a7-44d0-af2b-cd99466b0db0'>
-                                        <img src={linkbtn1} className='d-inline mt-2 herobtn' alt="" width="220" />
+                                        <img src={linkbtn1} onClick={handleAndroid} className='d-inline mt-2 herobtn' alt="" width="220" />
                                     </a>
                                     <a className="navbar- brand" href='https://apps.apple.com/in/app/flytant/id1530158515'>
-                                        <img src={linkbtn2} className='d-inline mt-2 herobtn' alt="" width="220" />
+                                        <img src={linkbtn2} onClick={handleios} className='d-inline mt-2 herobtn' alt="" width="220" />
                                     </a>
                                 </div>
                             </div>
@@ -36,9 +44,9 @@ function Hero() {
                                 <figure className="figure video-player mb-0 d-flex align-items-center justify-content-center">
                                     {
                                         play ?
-                                            <iframe id="ytplayer" className='mt-5 mt-md-0' type="text/html" title='youtubevideo' marginwidth="0" scrolling="auto"
+                                            <iframe id="ytplayer" className='mt-5 mt-md-0' type="text/html" title='youtubevideo' marginWidth="0" scrolling="auto"
                                                 src="https://www.youtube.com/embed/i0Nxig4oTz8?autoplay=1"
-                                                frameborder="0" allowfullscreen></iframe>
+                                                frameBorder="0" allowFullScreen></iframe>
                                             :
                                             <>
                                                 <div className="video-box">
