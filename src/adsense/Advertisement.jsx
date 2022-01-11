@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+require('dotenv').config();
 
 class GoogleAds extends Component {
 
@@ -12,7 +13,7 @@ class GoogleAds extends Component {
             style={{display:"block", textAlign:"center"}}
             data-ad-layout="in-article"
             data-ad-format="fluid"
-            data-ad-client="ca-pub-4102397689150467"
+            data-ad-client={process.env.REACT_APP_ADSENSE_AD_CLIENT}
             data-ad-slot={this.props.slot}></ins>
         );
     }

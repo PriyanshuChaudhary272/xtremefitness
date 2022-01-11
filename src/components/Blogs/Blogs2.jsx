@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import SoundButton from '../AboutUs/SoundButton'
+// import SoundButton from '../AboutUs/SoundButton'
 import SubHighlightBlogs from './SubHighlightBlogs'
 import { timeConverter } from '../../Utils/datetime'
 import { useLocation, useParams } from 'react-router-dom'
@@ -7,6 +7,8 @@ import { db } from '../../firebase'
 import Double from '../../pages/Images/Infinity-2s-287px.gif'
 import { doc, getDoc } from "firebase/firestore";
 import GoogleAds from '../../adsense/Advertisement'
+require('dotenv').config();
+
 function Blogs2() {
     // const { blogs, otherblogs } = props.state;
     const { id } = useParams();
@@ -83,7 +85,7 @@ function Blogs2() {
                                             {(i !== 0 && i % 3 === 0 && blog.imageUrls[i / 3]) && <img className='img-fluid carousel-img' src={blog.imageUrls[i / 3]} alt="" />}
                                             {(i !== 0 && i % 3 === 0) &&
                                                 <div className='mt-2'>
-                                                <GoogleAds slot = "6834377830"/>
+                                                    <GoogleAds slot = {process.env.REACT_APP_ADSENSE_SLOT}/>
                                                 </div>
                                             }
                                         </div>

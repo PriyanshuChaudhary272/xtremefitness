@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { storage } from '../../firebase';
 import { setlogEvent } from '../../Utils/setlogEvent';
+require('dotenv').config();
+
 const Career = () => {
     const [progress, setprogress] = useState(0)
     const navigate = useNavigate();
@@ -40,7 +42,7 @@ const Career = () => {
                         console.log(url);
                         // console.log(fl);
                         // const response = await fetch('http://localhost:5000/sendmailCareer', {
-                        const response = await fetch('https://flytant-1test-server.herokuapp.com/sendmailCareer', {
+                        const response = await fetch(process.env.REACT_APP_CAREER_URL, {
                             method: 'POST',
                             headers: {
                                 "Content-Type": 'application/json',

@@ -5,6 +5,9 @@ import Subhero from '../components/Home/Subhero'
 import Subhero2 from '../components/Home/subhero2'
 import Subhero3 from '../components/Home/subhero3'
 import Footer from '../components/Home/footer'
+require('dotenv').config();
+
+
 // import { setlogEvent } from '../Utils/setlogEvent'
 
 const Home = () => {
@@ -13,6 +16,7 @@ const Home = () => {
     }, [])
     return (
         < div className='homepage'>
+        
         <Navbar/>
         <Hero/>
         <Subhero/>

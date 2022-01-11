@@ -52,7 +52,7 @@ function Footer() {
                                                     <a href="https://www.facebook.com/flytantapp/" target="_blank" rel="noreferrer" ><img src={s3} onClick={() => {handleClick('Facebook')}} className="figure-img img-fluid rounded px-3 px-md-1" alt="..." /></a>
                                                 </div>
                                             </div>
-                                            <div className="col d-flex p-0 justify-content-center" target="_blank" rel="noreferrer" >
+                                            <div className="col d-flex p-0 justify-content-center" >
                                                 <div className="col d-flex align-items-center">
                                                     <a href="https://www.linkedin.com/company/flytant/mycompany/" target="_blank" rel="noreferrer" ><img src={s4} onClick={() => {handleClick('Linkedin')}} className=" figure-img img-fluid rounded px-3 px-md-1" alt="..." /></a>
                                                 </div>
@@ -95,7 +95,7 @@ function Footer() {
                                         <a className="navbar-brand m-0" href='https://apps.apple.com/in/app/flytant/id1530158515' target="_blank" rel="noreferrer" >
                                             <img src={footerlink1} className='d-inline' onClick={() => handleClick('iOS_Download')} alt="" width="220" />
                                         </a>
-                                        <a className="navbar-brand m-0" href='https://firebasestorage.googleapis.com/v0/b/flytant-app.appspot.com/o/androidApp%2FFlytant_1.0.4.apk?alt=media&amp;token=6e76d120-97a7-44d0-af2b-cd99466b0db0' target="_blank" rel="noreferrer" >
+                                        <a className="navbar-brand m-0" href='https://firebasestorage.googleapis.com/v0/b/flytant-app.appspot.com/o/androidApp%2FFlytant1.0.1%2FFlytant.apk?alt=media&token=bf98a628-8911-4c9f-a4ec-2a7c1c330ddc' target="_blank" rel="noreferrer" >
                                             <img src={footerlink2} className='d-inline my-4' onClick={() => handleClick('Android_Download')} alt="" width="220" />
                                         </a>
                                     </div>

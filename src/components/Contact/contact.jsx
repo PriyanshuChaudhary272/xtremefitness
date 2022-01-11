@@ -3,6 +3,7 @@ import {useNavigate} from "react-router-dom";
 import './Contact.css'
 import Contactus from '../Home/contacticons'
 import { setlogEvent } from '../../Utils/setlogEvent';
+require('dotenv').config();
 
 const Contact = () => {
     const navigate = useNavigate();
@@ -19,7 +20,7 @@ const Contact = () => {
         setlogEvent('Submit_Contact_Form', {page_title: '/contact'})
         e.preventDefault();
         // const response = await fetch('http://localhost:5000/sendmailContact',{
-        const response = await fetch('https://flytant-1test-server.herokuapp.com/sendmailContact',{
+        const response = await fetch(process.env.REACT_APP_CONTACT_URL,{
             method: 'POST',
             headers: {
                 "Content-Type": 'application/json',

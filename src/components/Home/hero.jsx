@@ -28,7 +28,7 @@ function Hero() {
                                 <h1>Connecting<br /> Brands & Influencers</h1>
                                 <p className="my-3 mb-md-5">Find influencers and brands of your niche</p>
                                 <div className='homepage-download-links d-flex flex-column flex-lg-row'>
-                                    <a className="navbar- brand me-0 me-md-3" href='https://firebasestorage.googleapis.com/v0/b/flytant-app.appspot.com/o/androidApp%2FFlytant_1.0.4.apk?alt=media&amp;token=6e76d120-97a7-44d0-af2b-cd99466b0db0'>
+                                    <a className="navbar- brand me-0 me-md-3" href='https://firebasestorage.googleapis.com/v0/b/flytant-app.appspot.com/o/androidApp%2FFlytant1.0.1%2FFlytant.apk?alt=media&token=bf98a628-8911-4c9f-a4ec-2a7c1c330ddc'>
                                         <img src={linkbtn1} onClick={handleAndroid} className='d-inline mt-2 herobtn' alt="" width="220" />
                                     </a>
                                     <a className="navbar- brand" href='https://apps.apple.com/in/app/flytant/id1530158515'>
