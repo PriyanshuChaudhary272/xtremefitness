@@ -16,6 +16,9 @@ import {
 } from "react-router-dom";
 import Influencerpage from './pages/Influencer';
 import Ads from './pages/Adspg';
+import FaQpg from './pages/FaQInfluencerspg';
+import FaQbrands from './pages/FaQbrandpg';
+
 function App() {
   return (
         <Router>
@@ -30,6 +33,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/influencers" element={<Influencerpage />} />
             <Route path="/ads" element={<Ads />} />
+            <Route path="/faq1" element={<FaQpg />} />
+            <Route path="/faq2" element={<FaQbrands />} />
             <Route path="/blogs" element={<Blogspg />} />
             <Route path="/blog/:id" element ={<Blog2pg />} />
           </Routes>

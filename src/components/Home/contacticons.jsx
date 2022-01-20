@@ -14,7 +14,7 @@ const Contacticons = () => {
     }
     return (
         <div className='contacticons py-5'>
-            <div className="row ">
+            <div className="row mx-auto max-min">
                 <p style={{ color: "white" }} className='text-center fs-4 mb-5 mt-3'>Or connect with us on</p>
                 <div className="row d-flex justify-content-center">
                     <div className="col-md-10 d-flex flex-column align-items-center flex-sm-row">

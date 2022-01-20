@@ -85,7 +85,7 @@ const Career = () => {
     return (
         <>
             <div>
-                <div className="row d-flex justify-content-center career">
+                <div className="row d-flex max-min mx-auto justify-content-center career">
                     <img src='' className='aboutimg' alt="" />
                     <div className="col-sm-7 d-flex flex-column align-items-center mt-5 pt-5">
                         <div className='career-img d-flex justify-content-center'>
