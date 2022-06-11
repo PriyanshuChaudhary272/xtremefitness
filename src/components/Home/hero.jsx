@@ -1,8 +1,4 @@
 import React, { useState } from 'react';
-import vdimg from './images/Group 1617.png'
-import playbutton from './images/playbutton.png'
-import linkbtn1 from './images/Group 1587.png'
-import linkbtn2 from './images/Group 1588.png'
 import { setlogEvent } from '../../Utils/setlogEvent';
 import triangle from './images/Rectangle 1355.svg'
 function Hero() {

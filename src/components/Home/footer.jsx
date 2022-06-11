@@ -1,7 +1,4 @@
 import React from 'react';
-import logo from './images/logo_top.png'
-import footerlink1 from './contacticons/Group 1668 (1).png'
-import footerlink2 from './contacticons/Group 1667.png'
 import s1 from './images/insta.png'
 import s2 from './images/youtube.png'
 import s3 from './images/fb.png'

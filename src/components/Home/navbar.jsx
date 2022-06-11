@@ -1,6 +1,5 @@
 import React from 'react';
 import './common.css'
-import logo from "./images/logo_top.png"
 import { setlogEvent } from '../../Utils/setlogEvent';
 import { Link } from 'react-router-dom';
 
