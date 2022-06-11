@@ -70,8 +70,6 @@ function Footer() {
                                     <ul className="list-group footer-list">
                                         <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Home')} href="/">Home</a></li>
                                         <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('About')} href="/about">About</a></li>
-                                        {/* <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Blogs')} href="/blogs">Blogs</a></li> */}
-                                        {/* <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Career')} href="/career">Career</a></li> */}
                                     </ul>
                                 </div>
                             </div>
@@ -80,10 +78,6 @@ function Footer() {
                                     <ul className="list-group footer-list">
                                         <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Contact')} href="/contact">Contact</a></li>
                                         <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Contact')} href="/contact">Products</a></li>
-                                        {/* <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Terms')} href="/terms">Terms</a></li> */}
-                                        {/* <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Ads')} href="/ads">Ads</a></li> */}
-                                        {/* <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Privacy')} href="/privacy">Privacy</a></li> */}
-                                        {/* <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Privacy')} href="/brandscontact">Brands</a></li> */}
                                     </ul>
                                 </div>
                             </div>
