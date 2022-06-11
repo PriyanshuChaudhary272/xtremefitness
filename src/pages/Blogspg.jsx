@@ -65,6 +65,7 @@ const Blogspg = () => {
         
         <div>
             <Navbar3 />
+            {console.log(blog.length)}
             {
                 (blog.length === 0 || !login) ?
                     <div className="mx-auto max-min2 d-flex justify-content-center">
