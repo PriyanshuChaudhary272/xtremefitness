@@ -1,0 +1,132 @@
+.hero2-div{
+    background: #FEA53D;
+    height: fit-content;
+    /* padding-top: 10vh; */
+}
+.hero2-div h1{
+    color: white;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 90px;
+}
+.hero2-navbar{
+    background: #FEA53D;
+}
+.navimg2{
+    width: 85%;
+}
+.navbtn6{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+}
+.navbar6-container{
+    width: 100%;
+}
+  .btn{
+	box-shadow: none !important
+}
+.navbar6-profile-text{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+}
+.navbar6-drop-text{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+}
+.hero2-input-div{
+    background-color:#E9E9E9;
+    border-radius: 0.5em;
+    height: 4rem;
+    width: 90%;
+}
+.hero2-input-div input{
+    background-color:#E9E9E9;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: #8A8787;
+    width: 100%;
+    border: none;
+}
+.hero2-input-Search-text{
+    height: 100%;
+    background: #262424;
+    color: white;
+    border-radius: 0 0.3em 0.3em 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+.hero2-popular-div{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: white;
+}
+.hero2-popular-div ul{
+    list-style: none;
+}
+.hero2-popular-li{
+    border: 1px solid white;
+    border-radius: 0.2em;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.LoginHome-influencer-h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+}
+.brand-contact-carousel-img{
+    height: 20rem;
+    width: 24rem;
+}
+.brand-contact-carousel-name{
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.brand-contact-carousel-details{
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: black;
+}
+.brand-contact-carousel-highlights-div{
+    background-color: #DDDDDD;
+    border-radius: 2em;
+}
+.carousel-overflow-x{
+    overflow-x: auto;
+}
+.slick-slider .slick-arrow{
+    width: 10%;
+    height: 4rem;
+    z-index: 2;
+    /* background-color: rgba(255, 255, 255, 0.652); */
+    box-shadow: 0px 0px 17px 7px rgba(255, 255, 255, 0.974);
+    border-radius: 1em;
+}
+/* .slick-slider .slick-next{
+    position: relative;
+    right: 0;
+} */
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color:  black; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

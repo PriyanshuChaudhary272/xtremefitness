@@ -55,15 +55,14 @@ const Blogspg = () => {
         // dispatch({type: "paginate"});
 
         setlogEvent('Load_More_Blogs', { page_title: '/blogs' })
-        setPrev(last);
-        await paginateBlogs();
+        paginateBlogs().then(() => setPrev(last))
+        console.log(last)
     }
     const hideMore = () => {
         document.getElementsByClassName('Load-more-topics')[0].style.display = "none"
-        console.log(last)
     }
     return (
-
+        
         <div>
             <Navbar3 />
             {

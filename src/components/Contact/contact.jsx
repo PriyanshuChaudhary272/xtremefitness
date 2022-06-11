@@ -1,42 +1,45 @@
-import React,{useState} from 'react'
-import {useNavigate} from "react-router-dom";
+import React, { useState } from 'react'
+import { useNavigate } from "react-router-dom";
 import './Contact.css'
 import Contactus from '../Home/contacticons'
+import ProgressBar from '../BrandContact/ProgressBar';
 import { setlogEvent } from '../../Utils/setlogEvent';
 require('dotenv').config();
 
 const Contact = () => {
     const navigate = useNavigate();
-    const [details, setDetails] = useState({ask: "", name: "", email: ""});
+    const [details, setDetails] = useState({ ask: "", name: "", email: "" });
+    const [progress, setProgress] = useState(false);
     const [text, settext] = useState('')
     const [error, setError] = useState('')
-    const onchange = (e) =>{
-        setDetails({...details, [e.target.name]: e.target.value})
+    const onchange = (e) => {
+        setDetails({ ...details, [e.target.name]: e.target.value })
     }
-    const handletext = (e) =>{
+    const handletext = (e) => {
         settext(e.target.value)
     }
-    const handlesubmit = async(e) =>{
-        setlogEvent('Submit_Contact_Form', {page_title: '/contact'})
+    const handlesubmit = async (e) => {
+        setlogEvent('Submit_Contact_Form', { page_title: '/contact' })
         e.preventDefault();
         // const response = await fetch('http://localhost:5000/sendmailContact',{
-        const response = await fetch(process.env.REACT_APP_CONTACT_URL,{
+        setProgress(true);
+        const response = await fetch(process.env.REACT_APP_CONTACT_URL, {
             method: 'POST',
             headers: {
                 "Content-Type": 'application/json',
             },
-            body: JSON.stringify({ask: details.ask ,name: details.name, email: details.email, text: text})
+            body: JSON.stringify({ ask: details.ask, name: details.name, email: details.email, text: text })
         });
         const user = await response.json();
         var frm = document.getElementsByName('contact-form')[0];
         frm.reset();  // Reset all form data
         // console.log(user);
-        if(user.success){
+        if (user.success) {
             navigate('/Contact')
             setError('true')
-            console.log(user.success)
+            setProgress(false)
         }
-        else{
+        else {
             console.log(user.error);
             setError('false');
         }
@@ -53,15 +56,16 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="col-sm-7 mt-5  mb-md-5 pb-md-5">
-                        {error === 'false' && <p className='text-center fs-4' style={{color: 'red'}}>Cannot submit!</p>}
-                        {error === 'true' && <p className='text-center fs-4' style={{color: 'green'}}>Submitted! Thanks for your query.</p>}
+                        {error === 'false' && <p className='text-center fs-4' style={{ color: 'red' }}>Cannot submit!</p>}
+                        {error === 'true' && <p className='text-center fs-4' style={{ color: 'green' }}>Submitted! Thanks for your query.</p>}
                         <form name="contact-form" onSubmit={handlesubmit} encType="multipart/form-data" className='contactform'>
-                            <input type="text" name='ask' onChange={onchange} className='contacttext mb-5' placeholder="i'd like to ask about..." required/>
+                            <input type="text" name='ask' onChange={onchange} className='contacttext mb-5' placeholder="i'd like to ask about..." required />
                             <div className='d-flex flex-column flex-md-row justify-content-between mt-0 mt-md-4'>
-                                <input type="text" name='name' className='formname' onChange={onchange} placeholder="Name" required/>
-                                <input type="email" name='email' className='formname' onChange={onchange}  placeholder='Email' required/>
+                                <input type="text" name='name' className='formname' onChange={onchange} placeholder="Name" required />
+                                <input type="email" name='email' className='formname' onChange={onchange} placeholder='Email' required />
                             </div>
-                            <textarea placeholder='Type Message Here' className='careertext' onChange={handletext} required/>
+                            <textarea placeholder='Type Message Here' className='careertext' onChange={handletext} required />
+                            {progress && <ProgressBar message = "Submitting"/>}
                             <button className='btn btn-dark rounded-pill my-5 px-5 careerbtn'>Submit</button>
                         </form>
                     </div>

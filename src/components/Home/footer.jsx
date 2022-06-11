@@ -32,12 +32,9 @@ function Footer() {
                             <div className="col-lg-4 d-flex flex-column align-items-center justify-content-center">
                                 <div className='px-2 px-md-5'>
                                     <a className="navbar-brand d-flex justify-content-center" href="/">
-                                        <img src={logo} alt="something" onClick={() => {handleClick('Flytant')}} width="100%" height="100%" className="d-inline-block align-text-top" />
+                                        {/* <img src={logo} alt="something" onClick={() => {handleClick('Flytant')}} width="100%" height="100%" className="d-inline-block align-text-top" /> */}
                                     </a>
                                 </div>
-                                <p className="text-start footerline">
-                                    Connecting Brands & Influencers
-                                </p>
                                 <div className="row my-5 d-flex justify-content-center">
                                     <div className="col-xl-10 footerlast">
                                         <div className="row d-flex flex-column flex-sm-row">
@@ -73,8 +70,8 @@ function Footer() {
                                     <ul className="list-group footer-list">
                                         <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Home')} href="/">Home</a></li>
                                         <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('About')} href="/about">About</a></li>
-                                        <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Blogs')} href="/blogs">Blogs</a></li>
-                                        <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Career')} href="/career">Career</a></li>
+                                        {/* <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Blogs')} href="/blogs">Blogs</a></li> */}
+                                        {/* <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Career')} href="/career">Career</a></li> */}
                                     </ul>
                                 </div>
                             </div>
@@ -82,27 +79,20 @@ function Footer() {
                                 <div className="col-md-4">
                                     <ul className="list-group footer-list">
                                         <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Contact')} href="/contact">Contact</a></li>
-                                        <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Terms')} href="/terms">Terms</a></li>
-                                        <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Ads')} href="/ads">Ads</a></li>
-                                        <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Privacy')} href="/privacy">Privacy</a></li>
+                                        <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Contact')} href="/contact">Products</a></li>
+                                        {/* <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Terms')} href="/terms">Terms</a></li> */}
+                                        {/* <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Ads')} href="/ads">Ads</a></li> */}
+                                        {/* <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Privacy')} href="/privacy">Privacy</a></li> */}
+                                        {/* <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Privacy')} href="/brandscontact">Brands</a></li> */}
                                     </ul>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div className="d-flex flex-column align-items-center justify-content-center">
-                                    <p className='getthe'>Get the apps!</p>
-                                    <div className='d-flex flex-column align-items-center justify-content-center'>
-                                        <a className="navbar-brand m-0" href='https://apps.apple.com/in/app/flytant/id1530158515' target="_blank" rel="noreferrer" >
-                                            <img src={footerlink1} className='d-inline' onClick={() => handleClick('iOS_Download')} alt="" width="220" />
-                                        </a>
-                                        <a className="navbar-brand m-0" href='https://firebasestorage.googleapis.com/v0/b/flytant-app.appspot.com/o/androidApp%2FFlytant1.0.1%2FFlytant.apk?alt=media&token=bf98a628-8911-4c9f-a4ec-2a7c1c330ddc' target="_blank" rel="noreferrer" >
-                                            <img src={footerlink2} className='d-inline my-4' onClick={() => handleClick('Android_Download')} alt="" width="220" />
-                                        </a>
-                                    </div>
                                 </div>
                             </div>
                             <hr />
-                            <p className='text-center footerline' id='footercopy'>© Flytant 2022</p>
+                            <p className='text-center footerline' id='footercopy'>© Xtremefitness 2022</p>
                         </div>
                     </div>
                 </div>

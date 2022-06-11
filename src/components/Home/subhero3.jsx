@@ -21,11 +21,11 @@ function Subhero3() {
                             <div className="row d-flex justify-content-center subhero-right ">
                                 <div className=" col-md-11 my-5">
                                     <h1>Its all here. <br /> all in one spot.</h1>
-                                    <p className="my-3 my-md-4">Flytant is the go to platform for Influencer Marketing. We provide a holistic platform for Influencers and Brands to connect together transparently and make the most of their Collaboration. 
-</p>
+                                    <p className="my-3 my-md-4">Flytant is the go to platform for Influencer Marketing. We provide a holistic platform for Influencers and Brands to connect together transparently and make the most of their Collaboration.
+                                    </p>
                                     <div className="d-flex flex-row justify-content-">
                                         <span className="btn btn-outline-light btn-dark mt-2 px-md-5 py-md-2 navbtn rounded-pill d-flex align-items-center">Get Onboard
-</span>
+                                        </span>
                                     </div>
                                 </div>
                             </div>

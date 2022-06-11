@@ -13,10 +13,10 @@ function Navbar() {
     }
     return (
         <>
-            <nav className="navbar navbar-expand-lg pt-4 max-min mx-auto">
+            <nav className="nav-absolute navbar navbar-expand-lg pt-4 max-min mx-auto">
                 <div className="container-fluid d-flex justify-content-between">
                     <Link className="navbrand ms-sm-5 d-flex align-items-center" to="/">
-                        <img src={logo} alt="" className='navimg' onClick={onLogo}/>
+                        {/* <img src={logo} alt="" className='navimg' onClick={onLogo}/> */}
                     </Link>
                     <div className="d-flex flex-row justify-content-center contact">
                         <a href='mailto:contact@flytant.com' onClick={onContact} className="btn btn-outline-light me-sm-5 mt-2 px-md-5 py-md-2 navbtn m-auto d-flex align-items-center">Contact</a>

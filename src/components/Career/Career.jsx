@@ -5,6 +5,7 @@ import Contactus from '../Home/contacticons'
 import { useNavigate } from "react-router-dom";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { storage } from '../../firebase';
+import ProgressBar from '../BrandContact/ProgressBar';
 import { setlogEvent } from '../../Utils/setlogEvent';
 require('dotenv').config();
 
@@ -110,12 +111,13 @@ const Career = () => {
                             {/* {progress !== 0 && <p htmlFor="" className='mb-0'>{`Uploading ${progress}%`}</p>} */}
                             <input onChange={handlefile} className="form-control form-control-lg careertext inputfile" id="formFileLg" type="file" required></input>
                             {progress !== 0 &&
-                                <div>
-                                    <div class="progress progress-bar bg-success" style={{ width: `${progress}%` }}>
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                                    </div>
-                                    <p>uploading...</p>
-                                </div>
+                            <ProgressBar message = "Submitting"/>
+                                // <div>
+                                //     <div class="progress progress-bar bg-success" style={{ width: `${progress}%` }}>
+                                //         <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                //     </div>
+                                //     <p>uploading...</p>
+                                // </div>
                             }
                             <button className='btn btn-dark rounded-pill my-5 px-5 careerbtn'>Submit</button>
                         </form>

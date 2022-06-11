@@ -18,12 +18,15 @@ import Influencerpage from './pages/Influencer';
 import Ads from './pages/Adspg';
 import FaQpg from './pages/FaQInfluencerspg';
 import FaQbrands from './pages/FaQbrandpg';
+import TempHero from './pages/TempHero';
+import Brandcontactpg from './pages/brandcontactpg';
 
 function App() {
   return (
         <Router>
           <ScrolltoTop />
           <Routes>
+            {/* <Route path="/" element={<TempHero />} /> */}
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/privacy" element={<Privacy />} />
@@ -36,6 +39,7 @@ function App() {
             <Route path="/faq1" element={<FaQpg />} />
             <Route path="/faq2" element={<FaQbrands />} />
             <Route path="/blogs" element={<Blogspg />} />
+            <Route path="/brandscontact" element={<Brandcontactpg />} />
             <Route path="/blog/:id" element ={<Blog2pg />} />
           </Routes>
         </Router >

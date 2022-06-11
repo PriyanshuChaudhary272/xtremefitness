@@ -37,7 +37,7 @@ function Brands(props) {
                                     </a>
                                 </div> */}
                                 <div className='homepage-download-links d-flex flex-column flex-md-row'>
-                                    <a className="navbar- brand me-0 me-md-3" href='https://firebasestorage.googleapis.com/v0/b/flytant-app.appspot.com/o/androidApp%2FFlytant1.0.1%2FFlytant.apk?alt=media&token=bf98a628-8911-4c9f-a4ec-2a7c1c330ddc'>
+                                    <a className="navbar- brand me-0 me-md-3" href='https://firebasestorage.googleapis.com/v0/b/flytant-app.appspot.com/o/androidApp%2FFlytant1.0.2%2FUpdated%2FFlytant.apk?alt=media&token=cc06343b-0789-40a7-99e7-aafbc948b00e'>
                                         <img src={linkbtn1} onClick={handleAndroid} className='d-inline mt-2 herobtn' alt="" width="180" />
                                     </a>
                                     <a className="navbar- brand" href='https://apps.apple.com/in/app/flytant/id1530158515'>

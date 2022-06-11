@@ -21,6 +21,7 @@ const SubHighlightBlogs = (props) => {
     }
     return (
         <div className='SubHighlight-blogs max-min2 mx-auto'>
+            {/* {console.log(props.blogs)} */}
             <div className='col-md-10 offset-md-1 px-md-5'>
                 <div className="row">
                     {/* create a map over fetched data a return the following div with appropriate assignment of data */}
