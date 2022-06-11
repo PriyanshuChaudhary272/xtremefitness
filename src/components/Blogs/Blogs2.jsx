@@ -67,24 +67,26 @@ function Blogs2() {
                                 {blog.imageUrls[0] && <img className='img-fluid carousel-img my-3 my-md-5' src={blog.imageUrls[0]} alt="" />}
                             </div>
                             {<p className='highlight-para Blogs2-top-para '>{para[0]}</p>}
-                            {blog.texts.map((para, i) => {
-                                if (i !== 0) {
-                                    return <div key={i}>
-                                        {blog.title[i] && <h3 className='mb-4 mt-2 mt-md-5 mb-md-4 highlight-title'>{blog.title[i]}</h3>}
-                                        {para && <p className='highlight-para Blogs2-top-para '>{para}</p>}
-                                        <div className='carousel-img-container'>
-                                            {(i !== 0 && i % 3 === 0 && blog.imageUrls[i / 3]) && <img className='img-fluid carousel-img' src={blog.imageUrls[i / 3]} alt="" />}
-                                            {(i !== 0 && i % 3 === 0) &&
-                                                <div className='mt-2'>
-                                                    {/* <GoogleAds slot = {process.env.REACT_APP_ADSENSE_SLOT}/> */}
-                                                </div>
-                                            }
-                                        </div>
-                                        {/* {para[1] && <p className='highlight-para Blogs2-top-para '>{para[1]}</p>} */}
-                                    </div>
-                                }
+                            {
+                            // blog.texts.map((para, i) => {
+                            //     if (i !== 0) {
+                            //         return <div key={i}>
+                            //             {blog.title[i] && <h3 className='mb-4 mt-2 mt-md-5 mb-md-4 highlight-title'>{blog.title[i]}</h3>}
+                            //             {para && <p className='highlight-para Blogs2-top-para '>{para}</p>}
+                            //             <div className='carousel-img-container'>
+                            //                 {(i !== 0 && i % 3 === 0 && blog.imageUrls[i / 3]) && <img className='img-fluid carousel-img' src={blog.imageUrls[i / 3]} alt="" />}
+                            //                 {(i !== 0 && i % 3 === 0) &&
+                            //                     <div className='mt-2'>
+                            //                         {/* <GoogleAds slot = {process.env.REACT_APP_ADSENSE_SLOT}/> */}
+                            //                     </div>
+                            //                 }
+                            //             </div>
+                            //             {/* {para[1] && <p className='highlight-para Blogs2-top-para '>{para[1]}</p>} */}
+                            //         </div>
+                            //     }
+                            // }
+                            // )
                             }
-                            )}
 
                             {show && <h3 className='p-0 mt-3 pt-5 mt-md-5 highlight-title Subhighlight-title'>More topics</h3>}
                         </div>

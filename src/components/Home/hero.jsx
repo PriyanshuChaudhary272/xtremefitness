@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { setlogEvent } from '../../Utils/setlogEvent';
+import React from 'react';
+// import { setlogEvent } from '../../Utils/setlogEvent';
 import triangle from './images/Rectangle 1355.svg'
 function Hero() {
     return (
@@ -17,7 +17,7 @@ function Hero() {
                             <h1 className=''><span style={{ color: "#F32424" }}>Xtreme</span> Fitness </h1>
                             <p className="my-md-3 mb-md-3 ">Build your dream body.</p>
                            <a href="https://goo.gl/maps/U9RSwXybYso9Sv2e8" rel="noreferrer" target="_blank"> <p style={{ color: "#B2B2B2"}} className='mb-0 p-0 fs-6 col-md-10'>4/1225, Street Number 3, Bhola Nath Nagar, Shalimar Park, Shahdara, Delhi, 110032</p></a>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.7740753583453!2d77.28019082676317!3d28.66648262612466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd1f48c7ea9f%3A0x2a8db1480e268e4a!2sXtreme%20Fitness!5e0!3m2!1sen!2sin!4v1654938323470!5m2!1sen!2sin" className='google-map img-fluid my-4' width="600" height="450" style={{border: "0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        </div>
+                            <iframe title="Xtreme Fitness Google map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.7740753583453!2d77.28019082676317!3d28.66648262612466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd1f48c7ea9f%3A0x2a8db1480e268e4a!2sXtreme%20Fitness!5e0!3m2!1sen!2sin!4v1654938323470!5m2!1sen!2sin" className='google-map img-fluid my-4' width="600" height="450" style={{border: "0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        </div>
                     </div>
                     <div className="col-md-6 d-flex align-items-center justify-content-center">
                         <div className="row ">
