@@ -2,18 +2,6 @@ import React, { useState } from 'react';
 import { setlogEvent } from '../../Utils/setlogEvent';
 import triangle from './images/Rectangle 1355.svg'
 function Hero() {
-    const [play, setPlay] = useState(false);
-    const handleclick = (e) => {
-        e.preventDefault();
-        setPlay(true)
-        setlogEvent('Play_Video_Home', { page_title: 'home' })
-    }
-    const handleios = () => {
-        setlogEvent('iOS_Download', { page_title: 'home' })
-    }
-    const handleAndroid = () => {
-        setlogEvent('Android_Download', { page_title: 'home' })
-    }
     return (
         // <>
             <div className='triangle-management '>

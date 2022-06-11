@@ -4,9 +4,9 @@ import { setlogEvent } from '../../Utils/setlogEvent';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
-    const onLogo = () =>{
-        setlogEvent('Nav_Logo',{page_title: 'home'})
-    }
+    // const onLogo = () =>{
+    //     setlogEvent('Nav_Logo',{page_title: 'home'})
+    // }
     const onContact = () =>{
         setlogEvent('Nav_Contact',{page_title: 'home'})
     }

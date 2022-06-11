@@ -18,7 +18,7 @@ import Influencerpage from './pages/Influencer';
 import Ads from './pages/Adspg';
 import FaQpg from './pages/FaQInfluencerspg';
 import FaQbrands from './pages/FaQbrandpg';
-import TempHero from './pages/TempHero';
+// import TempHero from './pages/TempHero';
 import Brandcontactpg from './pages/brandcontactpg';
 
 function App() {

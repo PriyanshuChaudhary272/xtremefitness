@@ -1,5 +1,4 @@
 import React from 'react';
-import img1 from './images/happy-young-woman-listening-music-smiling-trendy-blue-neon-studio 1.png';
 import { setlogEvent } from '../../Utils/setlogEvent';
 
 function Subhero2() {

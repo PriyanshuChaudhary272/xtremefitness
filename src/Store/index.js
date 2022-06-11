@@ -1,5 +1,5 @@
 import { db } from "../firebase";
-import { collection, getDocs, orderBy, query, limit, addDoc, startAfter, where } from "firebase/firestore";
+import { collection, getDocs, orderBy, query, limit, startAfter } from "firebase/firestore";
 import {createStore} from "redux";
 // const redux = require("redux");
 

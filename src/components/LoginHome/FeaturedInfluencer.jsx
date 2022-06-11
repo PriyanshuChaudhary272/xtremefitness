@@ -1,7 +1,7 @@
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import LoginHomeCarousel1 from "./LoginHomeCarousel1";
+// import LoginHomeCarousel1 from "./LoginHomeCarousel1";
 // import img1 from '/Users/priyanshuchaudhary/LV_Flytant/client/src/components/LoginHome/Images2/Vector (4).svg'
 // import img2 from '/Users/priyanshuchaudhary/LV_Flytant/client/src/components/LoginHome/Images2/Vector (3).svg'
 // import img3 from '/Users/priyanshuchaudhary/LV_Flytant/client/src/components/LoginHome/Images2/Vector (2).svg'
