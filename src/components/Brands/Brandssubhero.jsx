@@ -13,7 +13,7 @@ import img5 from './Brandmainimg/unsplash_SxAw9-H7kCI.png'
 const Brandssubhero = () => {
     return (
         <div>
-            <Brands heading ={<span> Flytant <br /> For Brands</span>} para = {<span>Post your Campaign and Find <br/> the Most Felicitous Influencer For Your <br /> Brand. Download the App to Get Started.</span>}  img = {img1} />
+            <Brands heading ={<span> Trainers <br /> For Brands</span>} para = {<span>Post your Campaign and Find <br/> the Most Felicitous Influencer For Your <br /> Brand. Download the App to Get Started.</span>}  img = {img1} />
             <Brandsub1 mainheading ="Advantages For Brands" heading ="Transparency" para = "Unlike Agencies we do not overcharge. There is complete transparency in choosing influencers and how much you have to pay them. You can also connect with Influencers directly for your campaign." img = {imgleft} />
             <Brandsub2 heading = "Engagement Rates" para = "View the Engagement rates of Influencers in all niches and Choose Influencers accordingly. Get quality influencers with high engagement rates for your campaigns." img = {img2}/>
             <Brandsub2reverse heading = "Social Score" para = {<span> The influencers Social Score helps you to determine the quality they possess and how good an Influencer is in contrast to other Influencers.</span>}  img = {img3} />

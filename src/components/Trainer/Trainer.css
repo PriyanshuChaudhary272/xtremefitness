@@ -1,0 +1,23 @@
+.trainer-profile{
+    width:70%;
+    transition: 0.1s ease-in;
+}
+.trainer-div{
+    position: relative;
+    margin-top: 20rem;
+}
+.trainer-profile:hover{
+    transform: scale(1.01, 1.01);
+    box-shadow: 0px 1px 34px 1px rgba(0,0,0,0.38);
+    -webkit-box-shadow: 0px 1px 34px 1px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 1px 34px 1px rgba(0,0,0,0.38);  ;
+   
+}
+.trainer-img{
+    position: relative;
+}
+@media screen and (max-width: 540px) {
+    .trainer-div h4, p{
+        font-size: 0.6rem;
+    }
+}

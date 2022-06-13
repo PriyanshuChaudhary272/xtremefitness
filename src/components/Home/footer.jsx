@@ -75,7 +75,7 @@ function Footer() {
                                     <ul className="list-group footer-list">
                                         <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Contact')} href="/contact">Contact</a></li>
                                         <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Contact')} href="/contact">Products</a></li>
-                                        <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Contact')} href="/blogs">Blogs</a></li>
+                                        {/* <li className="list-group-item list"><a className="nav-link p-0" onClick={() => handleClick('Contact')} href="/blogs">Blogs</a></li> */}
                                     </ul>
                                 </div>
                             </div>

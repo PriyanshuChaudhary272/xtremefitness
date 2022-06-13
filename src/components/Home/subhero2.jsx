@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { setlogEvent } from '../../Utils/setlogEvent';
 
 function Subhero2() {
@@ -11,7 +12,7 @@ function Subhero2() {
                 <div className='subherodiv subherodiv2 ms-auto'>
                     <div className="row d-flex flex-column flex-md-row mt-3 mt-md-0">
                         <div className="col-md-6 d-flex flex-column justify-content-center align-items-center subhero2-left-box subhero2-left-back">
-                            <a href="/brands" onClick={handleClick}className='fullevent mx-md-5'>
+                            <Link to="/trainers" onClick={handleClick}className='fullevent mx-md-5'>
                                 <div className="row d-flex justify-content-center subhero2-left">
                                     <div className="col-md-11 my-5">
                                         <h1 className=''>Trainers<br /></h1>
@@ -23,7 +24,7 @@ function Subhero2() {
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-md-6 subhero2-right-back">
                             <div className="row d-flex align-items-center justify-content-center subhero2inner">

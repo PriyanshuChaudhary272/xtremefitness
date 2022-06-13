@@ -8,13 +8,15 @@ import Contact from './pages/Contact';
 import Brands from './pages/Brands'
 import ScrolltoTop from './components/ScrolltoTop';
 import Blogspg from './pages/Blogspg';
+import Trainerspage from './pages/TrainersPage';
 import Blog2pg from './pages/Blog2pg';
+import TrainerProfile from './pages/TrainerProfile'
 import {
   BrowserRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
-import Influencerpage from './pages/Influencer';
+// import Influencerpage from './pages/TrainersPage';
 import Ads from './pages/Adspg';
 import FaQpg from './pages/FaQInfluencerspg';
 import FaQbrands from './pages/FaQbrandpg';
@@ -32,15 +34,16 @@ function App() {
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/career" element={<Career />} />
-            <Route path="/brands" element={<Brands />} />
+            <Route path="/influencers" element={<Brands />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/influencers" element={<Influencerpage />} />
+            <Route path="/trainers" element={<Trainerspage />} />
             <Route path="/ads" element={<Ads />} />
             <Route path="/faq1" element={<FaQpg />} />
             <Route path="/faq2" element={<FaQbrands />} />
             <Route path="/blogs" element={<Blogspg />} />
             <Route path="/brandscontact" element={<Brandcontactpg />} />
             <Route path="/blog/:id" element ={<Blog2pg />} />
+            <Route path="trainers/:id" element={<TrainerProfile/>}/>
           </Routes>
         </Router >
   );

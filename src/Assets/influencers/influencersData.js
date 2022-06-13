@@ -1,0 +1,1 @@
+import img1 from './gallery/daniel-apodaca-WdoQio6HPVA-unsplash.jpg'
