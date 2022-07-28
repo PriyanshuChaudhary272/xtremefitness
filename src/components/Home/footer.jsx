@@ -37,24 +37,24 @@ function Footer() {
                                         <div className="row d-flex flex-column flex-sm-row">
                                             <div className="col d-flex p-0 justify-content-center">
                                                 <div className="col d-flex align-items-center">
-                                                    <a href="https://www.instagram.com/flytant/" target="_blank" rel="noreferrer"><img src={s1} onClick={() => {handleClick('Insta')}} className=" figure-img img-fluid rounded px-3 px-md-1" alt="..." /></a>
+                                                    <a href="https://www.instagram.com/xtremeitis/" target="_blank" rel="noreferrer"><img src={s1} onClick={() => {handleClick('Insta')}} className=" figure-img img-fluid rounded px-3 px-md-1" alt="..." /></a>
                                                 </div>
                                                 <div className="col d-flex align-items-center ">
-                                                    <a href="https://www.youtube.com/channel/UC_r46_UgBvaG2k94LDjEIWQ" target="_blank" rel="noreferrer" ><img src={s2} onClick={() => {handleClick('Youtube')}} className=" figure-img img-fluid rounded px-3 px-md-1" alt="..." /></a>
+                                                    <a href="/" target="_blank" rel="noreferrer" ><img src={s2} onClick={() => {handleClick('Youtube')}} className=" figure-img img-fluid rounded px-3 px-md-1" alt="..." /></a>
                                                 </div>
                                                 <div className="col d-flex align-items-center ">
-                                                    <a href="https://www.facebook.com/flytantapp/" target="_blank" rel="noreferrer" ><img src={s3} onClick={() => {handleClick('Facebook')}} className="figure-img img-fluid rounded px-3 px-md-1" alt="..." /></a>
+                                                    <a href="/" target="_blank" rel="noreferrer" ><img src={s3} onClick={() => {handleClick('Facebook')}} className="figure-img img-fluid rounded px-3 px-md-1" alt="..." /></a>
                                                 </div>
                                             </div>
                                             <div className="col d-flex p-0 justify-content-center" >
                                                 <div className="col d-flex align-items-center">
-                                                    <a href="https://www.linkedin.com/company/flytant/mycompany/" target="_blank" rel="noreferrer" ><img src={s4} onClick={() => {handleClick('Linkedin')}} className=" figure-img img-fluid rounded px-3 px-md-1" alt="..." /></a>
+                                                    <a href="/" target="_blank" rel="noreferrer" ><img src={s4} onClick={() => {handleClick('Linkedin')}} className=" figure-img img-fluid rounded px-3 px-md-1" alt="..." /></a>
                                                 </div>
                                                 <div className="col d-flex align-items-center">
-                                                    <a href="https://twitter.com/flytant" target="_blank" rel="noreferrer" ><img src={s5} onClick={() => {handleClick('Twitter')}} className=" figure-img img-fluid rounded px-3 px-md-1" alt="..." /></a>
+                                                    <a href="/" target="_blank" rel="noreferrer" ><img src={s5} onClick={() => {handleClick('Twitter')}} className=" figure-img img-fluid rounded px-3 px-md-1" alt="..." /></a>
                                                 </div>
                                                 <div className="col d-flex align-items-center">
-                                                    <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&href=contact@flytant.com" target="_blank" rel="noreferrer" ><img src={s6} onClick={() => {handleClick('Mail')}} className="  figure-img img-fluid rounded px-3 px-md-1" alt="..." /></a>
+                                                    <a href="/" target="_blank" rel="noreferrer" ><img src={s6} onClick={() => {handleClick('Mail')}} className="  figure-img img-fluid rounded px-3 px-md-1" alt="..." /></a>
                                                 </div>
                                             </div>
                                         </div>
